@@ -1,0 +1,35 @@
+TREE:
+  depth: 3
+  divide: 3
+  selection: root
+  dim_cls: 1024
+
+MODEL:
+  arch: tree
+  c: 3
+  dim: 128
+  heads: 4
+  layers: 4
+  drop_out: 0.5
+  pooling: average
+
+DATA:
+  gpu: 0
+  data_name: modelnet40
+  data_root: dataset/modelnet40_normal_resampled/
+  num_point: 1024
+  pt_norm: True  # input normalization
+
+TRAIN:
+  exp_name: root
+  wandb_project: pc-classification
+  wandb_name: root-voxel-pooling
+  batch_size: 24
+  test_batch_size: 24
+  workers: 4
+  epochs: 200
+  lr: 0.05
+  momentum: 0.9
+  weight_decay: 0.0001
+  eval: False
+  no_cuda: False

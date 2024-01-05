@@ -1,0 +1,71 @@
+PARAMETER ...
+arch: pointtransformer_seg
+batch_size: 16
+batch_size_test: 4
+batch_size_val: 16
+c: 3
+classes: 50
+data_name: shapenet
+decay_rate: 0.0001
+delta: 1
+depth: 3
+dim: 128
+dist_backend: nccl
+dist_url: tcp://localhost:8888
+divide: 3
+drop_out: 0.5
+drop_rate: 0.5
+epoch: 200
+eval_freq: 1
+evaluate: True
+exp_name: TEST
+gpu: 2
+heads: 4
+ignore_label: 255
+layers: 4
+learning_rate: 0.001
+log_dir: None
+lr_decay: 0.5
+manual_seed: 7777
+model: point-transformer
+model_path: None
+momentum: 0.9
+multiplier: 0.1
+multiprocessing_distributed: True
+n_class: 16
+n_part: 50
+n_point: 2048
+names_path: data/s3dis/s3dis_names.txt
+normal: False
+npoint: 2048
+pooling: average
+print_freq: 1
+project_name: segmen_part
+rank: 0
+resume: None
+save_folder: None
+save_freq: 1
+save_path: exp/shapenet/
+split: val
+start_epoch: 0
+step_epoch: 30
+step_size: 20
+subset: False
+sync_bn: False
+test_gpu: [0]
+test_list: dataset/s3dis/list/val5.txt
+test_list_full: dataset/s3dis/list/val5_full.txt
+test_workers: 4
+train_rotate: False
+train_shift: False
+use_xyz: True
+wandb: False
+weight: None
+workers: 4
+world_size: 1
+The number of training data is: 13998
+The number of test data is: 2874
+Epoch 1 (1/200):
+Learning rate:0.001000
+BN momentum updated to: 0.100000
+  0%|          | 0/874 [00:00<?, ?it/s]  0%|          | 1/874 [00:01<16:49,  1.16s/it]  0%|          | 2/874 [00:01<06:46,  2.15it/s]  0%|          | 3/874 [00:01<05:37,  2.58it/s]  0%|          | 4/874 [00:02<05:29,  2.64it/s]  1%|          | 5/874 [00:02<05:30,  2.63it/s]  1%|          | 6/874 [00:03<05:33,  2.60it/s]

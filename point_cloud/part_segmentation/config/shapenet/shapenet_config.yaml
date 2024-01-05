@@ -1,0 +1,77 @@
+TREE:
+  depth: 3
+  divide: 3
+
+MODEL:
+  arch: tree
+  c: 3
+  dim: 128
+  heads: 4
+  layers: 4
+  drop_out: 0.5
+  pooling: average
+  n_class: 16
+  n_part: 50
+  n_point: 2048
+  npoint: 2048
+
+AUGMENT:
+  train_shift: False
+  train_rotate: False
+  
+DATA:
+  normal: False
+  delta: 1
+  
+
+TRAIN:
+  arch: pointtransformer_seg
+  model: point-transformer
+  project_name: segmen_part
+  log_dir: None
+  exp_name: TEST
+  use_xyz: True
+  sync_bn: False
+  ignore_label: 255
+  gpu: "2"
+  workers: 4  # data loader workers
+  batch_size: 16  # batch size for training
+  batch_size_val: 16  # batch size for validation during training, memory and speed tradeoff
+  learning_rate: 0.001
+  lr_decay: 0.5
+  step_size: 20
+  epoch: 200
+  start_epoch: 0
+  step_epoch: 30
+  multiplier: 0.1
+  momentum: 0.9
+  decay_rate: 0.0001
+  drop_rate: 0.5
+  manual_seed: 7777
+  print_freq: 1
+  save_freq: 1
+  save_path:
+  weight:  # path to initial weight (default: none)
+  resume:  # path to latest checkpoint (default: none)
+  evaluate: True  # evaluate on validation set, extra gpu memory needed and small batch_size_val is recommend
+  eval_freq: 1
+  classes: 50
+  data_name: shapenet
+ 
+Distributed:
+  dist_url: tcp://localhost:8888
+  dist_backend: 'nccl'
+  multiprocessing_distributed: True
+  world_size: 1
+  rank: 0
+ 
+TEST:
+  test_list: dataset/s3dis/list/val5.txt
+  test_list_full: dataset/s3dis/list/val5_full.txt
+  split: val  # split in [train, val and test]
+  test_gpu: [0]
+  test_workers: 4
+  batch_size_test: 4
+  model_path:
+  save_folder:
+  names_path: data/s3dis/s3dis_names.txt
