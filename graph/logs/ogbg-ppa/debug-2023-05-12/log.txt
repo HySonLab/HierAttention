@@ -1,0 +1,42 @@
+--------------------------------------------------
+dataset: ogbg-ppa
+debug: False
+depth: -1
+device: 0
+expname: debug
+logfile: None
+metis:
+  n_patches: 32
+model:
+  gnn_type: GINEConv
+  hidden_size: 96
+  name: GraphMLPMixer
+  nlayer_gnn: 4
+  nlayer_hierattn: 4
+  pool: mean
+  residual: True
+  use_patch_pe: True
+num_workers: 8
+pos_enc:
+  lap_dim: 0
+  rw_dim: 0
+seed: None
+train:
+  batch_size: 2
+  dropout: 0.0
+  epochs: 200
+  lr: 0.001
+  lr_decay: 0.5
+  lr_patience: 20
+  min_lr: 1e-05
+  mlpmixer_dropout: 0.0
+  optimizer: Adam
+  runs: 100
+  wd: 0.0
+--------------------------------------------------
+Time: 2023/05/12 - 11:40
+
+----------SEED ---------: 25
+
+
+Number of parameters: 326595

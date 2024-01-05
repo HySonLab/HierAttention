@@ -1,0 +1,924 @@
+--------------------------------------------------
+dataset: peptides-func
+debug: False
+depth: -1
+device: 0
+expname: peptides-func-lap-paper
+logfile: None
+metis:
+  n_patches: 32
+model:
+  gnn_type: GINEConv
+  hidden_size: 96
+  name: GraphMLPMixer
+  nlayer_gnn: 4
+  nlayer_hierattn: 4
+  pool: mean
+  residual: True
+  use_patch_pe: True
+num_workers: 8
+pos_enc:
+  lap_dim: 16
+  rw_dim: 0
+seed: [25, 32, 65, 58]
+train:
+  batch_size: 128
+  dropout: 0.0
+  epochs: 200
+  lr: 0.001
+  lr_decay: 0.5
+  lr_patience: 20
+  min_lr: 1e-05
+  mlpmixer_dropout: 0.0
+  optimizer: Adam
+  runs: 100
+  wd: 0.0
+--------------------------------------------------
+Time: 2023/04/25 - 03:17
+
+----------SEED ---------: 25
+
+
+Number of parameters: 346206
+Epoch: 000, Train perf: 0.2583, Train Loss: 0.4021, Val: 0.3442, Test: 0.3413, Seconds: 13.4362
+Epoch: 001, Train perf: 0.3551, Train Loss: 0.3026, Val: 0.3704, Test: 0.3654, Seconds: 12.6404
+Epoch: 002, Train perf: 0.3884, Train Loss: 0.2895, Val: 0.4088, Test: 0.3965, Seconds: 12.5215
+Epoch: 003, Train perf: 0.4052, Train Loss: 0.2821, Val: 0.4267, Test: 0.4032, Seconds: 12.3318
+Epoch: 004, Train perf: 0.4212, Train Loss: 0.2763, Val: 0.4227, Test: 0.4032, Seconds: 10.8715
+Epoch: 005, Train perf: 0.4306, Train Loss: 0.2718, Val: 0.4378, Test: 0.4287, Seconds: 12.8883
+Epoch: 006, Train perf: 0.4365, Train Loss: 0.2689, Val: 0.4515, Test: 0.4369, Seconds: 12.6675
+Epoch: 007, Train perf: 0.4534, Train Loss: 0.2641, Val: 0.4652, Test: 0.4471, Seconds: 12.6269
+Epoch: 008, Train perf: 0.4619, Train Loss: 0.2612, Val: 0.4697, Test: 0.4531, Seconds: 12.5570
+Epoch: 009, Train perf: 0.4688, Train Loss: 0.2579, Val: 0.4732, Test: 0.4487, Seconds: 12.5314
+Epoch: 010, Train perf: 0.4827, Train Loss: 0.2546, Val: 0.4945, Test: 0.4721, Seconds: 12.5426
+Epoch: 011, Train perf: 0.4821, Train Loss: 0.2542, Val: 0.4917, Test: 0.4721, Seconds: 10.8046
+Epoch: 012, Train perf: 0.4961, Train Loss: 0.2498, Val: 0.5053, Test: 0.4742, Seconds: 12.7412
+Epoch: 013, Train perf: 0.5146, Train Loss: 0.2456, Val: 0.5088, Test: 0.4911, Seconds: 12.4638
+Epoch: 014, Train perf: 0.5104, Train Loss: 0.2440, Val: 0.5177, Test: 0.4867, Seconds: 13.6071
+Epoch: 015, Train perf: 0.5212, Train Loss: 0.2409, Val: 0.5339, Test: 0.4985, Seconds: 12.9311
+Epoch: 016, Train perf: 0.5296, Train Loss: 0.2391, Val: 0.5262, Test: 0.4985, Seconds: 11.0148
+Epoch: 017, Train perf: 0.5363, Train Loss: 0.2360, Val: 0.5313, Test: 0.4985, Seconds: 11.0201
+Epoch: 018, Train perf: 0.5401, Train Loss: 0.2354, Val: 0.5404, Test: 0.5104, Seconds: 12.5426
+Epoch: 019, Train perf: 0.5502, Train Loss: 0.2330, Val: 0.5446, Test: 0.5119, Seconds: 12.5384
+Epoch: 020, Train perf: 0.5533, Train Loss: 0.2310, Val: 0.5477, Test: 0.5040, Seconds: 12.9247
+Epoch: 021, Train perf: 0.5615, Train Loss: 0.2286, Val: 0.5533, Test: 0.5202, Seconds: 12.6320
+Epoch: 022, Train perf: 0.5642, Train Loss: 0.2276, Val: 0.5585, Test: 0.5246, Seconds: 13.2603
+Epoch: 023, Train perf: 0.5707, Train Loss: 0.2255, Val: 0.5560, Test: 0.5246, Seconds: 10.8648
+Epoch: 024, Train perf: 0.5756, Train Loss: 0.2233, Val: 0.5569, Test: 0.5246, Seconds: 10.9611
+Epoch: 025, Train perf: 0.5787, Train Loss: 0.2226, Val: 0.5565, Test: 0.5246, Seconds: 10.8847
+Epoch: 026, Train perf: 0.5868, Train Loss: 0.2205, Val: 0.5684, Test: 0.5342, Seconds: 12.5062
+Epoch: 027, Train perf: 0.5965, Train Loss: 0.2173, Val: 0.5742, Test: 0.5402, Seconds: 12.4204
+Epoch: 028, Train perf: 0.5938, Train Loss: 0.2166, Val: 0.5711, Test: 0.5402, Seconds: 10.8788
+Epoch: 029, Train perf: 0.5994, Train Loss: 0.2152, Val: 0.5649, Test: 0.5402, Seconds: 10.9222
+Epoch: 030, Train perf: 0.6024, Train Loss: 0.2145, Val: 0.5700, Test: 0.5402, Seconds: 10.9163
+Epoch: 031, Train perf: 0.6065, Train Loss: 0.2130, Val: 0.5757, Test: 0.5382, Seconds: 12.5689
+Epoch: 032, Train perf: 0.6126, Train Loss: 0.2112, Val: 0.5716, Test: 0.5382, Seconds: 11.1571
+Epoch: 033, Train perf: 0.6181, Train Loss: 0.2085, Val: 0.5823, Test: 0.5465, Seconds: 12.6169
+Epoch: 034, Train perf: 0.6170, Train Loss: 0.2075, Val: 0.5790, Test: 0.5465, Seconds: 10.8744
+Epoch: 035, Train perf: 0.6261, Train Loss: 0.2065, Val: 0.5833, Test: 0.5463, Seconds: 12.8606
+Epoch: 036, Train perf: 0.6325, Train Loss: 0.2035, Val: 0.5758, Test: 0.5463, Seconds: 11.0784
+Epoch: 037, Train perf: 0.6360, Train Loss: 0.2032, Val: 0.5940, Test: 0.5589, Seconds: 12.7650
+Epoch: 038, Train perf: 0.6429, Train Loss: 0.1997, Val: 0.5775, Test: 0.5589, Seconds: 11.0250
+Epoch: 039, Train perf: 0.6457, Train Loss: 0.1992, Val: 0.5861, Test: 0.5589, Seconds: 10.7866
+Epoch: 040, Train perf: 0.6499, Train Loss: 0.1988, Val: 0.5818, Test: 0.5589, Seconds: 10.8419
+Epoch: 041, Train perf: 0.6488, Train Loss: 0.1969, Val: 0.5822, Test: 0.5589, Seconds: 10.9505
+Epoch: 042, Train perf: 0.6554, Train Loss: 0.1961, Val: 0.5871, Test: 0.5589, Seconds: 10.9905
+Epoch: 043, Train perf: 0.6603, Train Loss: 0.1932, Val: 0.5892, Test: 0.5589, Seconds: 10.6969
+Epoch: 044, Train perf: 0.6600, Train Loss: 0.1936, Val: 0.5858, Test: 0.5589, Seconds: 10.7081
+Epoch: 045, Train perf: 0.6680, Train Loss: 0.1916, Val: 0.5992, Test: 0.5719, Seconds: 12.3196
+Epoch: 046, Train perf: 0.6736, Train Loss: 0.1891, Val: 0.5959, Test: 0.5719, Seconds: 10.5323
+Epoch: 047, Train perf: 0.6809, Train Loss: 0.1866, Val: 0.5942, Test: 0.5719, Seconds: 10.6887
+Epoch: 048, Train perf: 0.6855, Train Loss: 0.1859, Val: 0.6015, Test: 0.5687, Seconds: 12.3804
+Epoch: 049, Train perf: 0.6875, Train Loss: 0.1843, Val: 0.6087, Test: 0.5698, Seconds: 12.2630
+Epoch: 050, Train perf: 0.6937, Train Loss: 0.1813, Val: 0.5999, Test: 0.5698, Seconds: 10.7332
+Epoch: 051, Train perf: 0.6908, Train Loss: 0.1816, Val: 0.6011, Test: 0.5698, Seconds: 10.6827
+Epoch: 052, Train perf: 0.6999, Train Loss: 0.1778, Val: 0.6098, Test: 0.5850, Seconds: 12.3017
+Epoch: 053, Train perf: 0.7044, Train Loss: 0.1767, Val: 0.5961, Test: 0.5850, Seconds: 10.7741
+Epoch: 054, Train perf: 0.7080, Train Loss: 0.1749, Val: 0.6044, Test: 0.5850, Seconds: 10.7107
+Epoch: 055, Train perf: 0.7095, Train Loss: 0.1757, Val: 0.6106, Test: 0.5919, Seconds: 12.3228
+Epoch: 056, Train perf: 0.7159, Train Loss: 0.1731, Val: 0.6080, Test: 0.5919, Seconds: 11.1882
+Epoch: 057, Train perf: 0.7196, Train Loss: 0.1708, Val: 0.6064, Test: 0.5919, Seconds: 10.7749
+Epoch: 058, Train perf: 0.7286, Train Loss: 0.1690, Val: 0.6127, Test: 0.5900, Seconds: 12.7702
+Epoch: 059, Train perf: 0.7265, Train Loss: 0.1676, Val: 0.6097, Test: 0.5900, Seconds: 10.8635
+Epoch: 060, Train perf: 0.7396, Train Loss: 0.1649, Val: 0.6113, Test: 0.5900, Seconds: 10.6646
+Epoch: 061, Train perf: 0.7370, Train Loss: 0.1636, Val: 0.6055, Test: 0.5900, Seconds: 10.5782
+Epoch: 062, Train perf: 0.7423, Train Loss: 0.1616, Val: 0.6185, Test: 0.5926, Seconds: 12.3548
+Epoch: 063, Train perf: 0.7485, Train Loss: 0.1594, Val: 0.6081, Test: 0.5926, Seconds: 10.6853
+Epoch: 064, Train perf: 0.7524, Train Loss: 0.1577, Val: 0.6201, Test: 0.5887, Seconds: 12.2665
+Epoch: 065, Train perf: 0.7582, Train Loss: 0.1556, Val: 0.6151, Test: 0.5887, Seconds: 10.7787
+Epoch: 066, Train perf: 0.7553, Train Loss: 0.1555, Val: 0.6131, Test: 0.5887, Seconds: 10.7222
+Epoch: 067, Train perf: 0.7608, Train Loss: 0.1536, Val: 0.6147, Test: 0.5887, Seconds: 10.7236
+Epoch: 068, Train perf: 0.7669, Train Loss: 0.1521, Val: 0.6205, Test: 0.6023, Seconds: 12.3961
+Epoch: 069, Train perf: 0.7774, Train Loss: 0.1476, Val: 0.6168, Test: 0.6023, Seconds: 10.5648
+Epoch: 070, Train perf: 0.7828, Train Loss: 0.1467, Val: 0.6193, Test: 0.6023, Seconds: 10.6547
+Epoch: 071, Train perf: 0.7791, Train Loss: 0.1454, Val: 0.6202, Test: 0.6023, Seconds: 10.7316
+Epoch: 072, Train perf: 0.7896, Train Loss: 0.1416, Val: 0.6157, Test: 0.6023, Seconds: 10.6472
+Epoch: 073, Train perf: 0.7881, Train Loss: 0.1416, Val: 0.6158, Test: 0.6023, Seconds: 10.7053
+Epoch: 074, Train perf: 0.7943, Train Loss: 0.1384, Val: 0.6199, Test: 0.6023, Seconds: 10.6871
+Epoch: 075, Train perf: 0.7953, Train Loss: 0.1392, Val: 0.6237, Test: 0.6095, Seconds: 12.3590
+Epoch: 076, Train perf: 0.8011, Train Loss: 0.1358, Val: 0.6075, Test: 0.6095, Seconds: 10.5767
+Epoch: 077, Train perf: 0.8029, Train Loss: 0.1355, Val: 0.6191, Test: 0.6095, Seconds: 10.7362
+Epoch 00078: reducing learning rate of group 0 to 5.0000e-04.
+Epoch: 078, Train perf: 0.8301, Train Loss: 0.1245, Val: 0.6179, Test: 0.6095, Seconds: 11.7781
+Epoch: 079, Train perf: 0.8342, Train Loss: 0.1220, Val: 0.6218, Test: 0.6095, Seconds: 10.8243
+Epoch: 080, Train perf: 0.8389, Train Loss: 0.1209, Val: 0.6150, Test: 0.6095, Seconds: 10.9025
+Epoch: 081, Train perf: 0.8439, Train Loss: 0.1178, Val: 0.6203, Test: 0.6095, Seconds: 10.8535
+Epoch: 082, Train perf: 0.8427, Train Loss: 0.1175, Val: 0.6254, Test: 0.6231, Seconds: 12.3744
+Epoch: 083, Train perf: 0.8463, Train Loss: 0.1159, Val: 0.6245, Test: 0.6231, Seconds: 10.6409
+Epoch: 084, Train perf: 0.8516, Train Loss: 0.1144, Val: 0.6220, Test: 0.6231, Seconds: 10.5780
+Epoch: 085, Train perf: 0.8491, Train Loss: 0.1149, Val: 0.6202, Test: 0.6231, Seconds: 10.7253
+Epoch: 086, Train perf: 0.8576, Train Loss: 0.1111, Val: 0.6245, Test: 0.6231, Seconds: 10.6936
+Epoch: 087, Train perf: 0.8559, Train Loss: 0.1109, Val: 0.6189, Test: 0.6231, Seconds: 11.0976
+Epoch: 088, Train perf: 0.8592, Train Loss: 0.1103, Val: 0.6133, Test: 0.6231, Seconds: 10.6209
+Epoch: 089, Train perf: 0.8620, Train Loss: 0.1095, Val: 0.6168, Test: 0.6231, Seconds: 10.6156
+Epoch: 090, Train perf: 0.8630, Train Loss: 0.1082, Val: 0.6248, Test: 0.6231, Seconds: 10.7845
+Epoch: 091, Train perf: 0.8641, Train Loss: 0.1072, Val: 0.6184, Test: 0.6231, Seconds: 10.6785
+Epoch: 092, Train perf: 0.8674, Train Loss: 0.1056, Val: 0.6140, Test: 0.6231, Seconds: 10.6122
+Epoch: 093, Train perf: 0.8655, Train Loss: 0.1055, Val: 0.6210, Test: 0.6231, Seconds: 10.7140
+Epoch: 094, Train perf: 0.8720, Train Loss: 0.1029, Val: 0.6273, Test: 0.6175, Seconds: 12.3270
+Epoch: 095, Train perf: 0.8729, Train Loss: 0.1024, Val: 0.6156, Test: 0.6175, Seconds: 10.6231
+Epoch: 096, Train perf: 0.8774, Train Loss: 0.1014, Val: 0.6180, Test: 0.6175, Seconds: 10.5605
+Epoch: 097, Train perf: 0.8773, Train Loss: 0.1000, Val: 0.6216, Test: 0.6175, Seconds: 10.8007
+Epoch: 098, Train perf: 0.8768, Train Loss: 0.1000, Val: 0.6177, Test: 0.6175, Seconds: 10.6617
+Epoch 00099: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 099, Train perf: 0.8902, Train Loss: 0.0947, Val: 0.6222, Test: 0.6175, Seconds: 10.5841
+Epoch: 100, Train perf: 0.8939, Train Loss: 0.0933, Val: 0.6222, Test: 0.6175, Seconds: 11.1455
+Epoch: 101, Train perf: 0.8979, Train Loss: 0.0912, Val: 0.6196, Test: 0.6175, Seconds: 10.8297
+Epoch: 102, Train perf: 0.8953, Train Loss: 0.0914, Val: 0.6195, Test: 0.6175, Seconds: 10.7077
+Epoch: 103, Train perf: 0.8955, Train Loss: 0.0909, Val: 0.6229, Test: 0.6175, Seconds: 10.8204
+Epoch: 104, Train perf: 0.8986, Train Loss: 0.0897, Val: 0.6127, Test: 0.6175, Seconds: 10.5504
+Epoch: 105, Train perf: 0.8997, Train Loss: 0.0887, Val: 0.6183, Test: 0.6175, Seconds: 10.8893
+Epoch: 106, Train perf: 0.8999, Train Loss: 0.0896, Val: 0.6222, Test: 0.6175, Seconds: 10.7475
+Epoch: 107, Train perf: 0.9015, Train Loss: 0.0885, Val: 0.6167, Test: 0.6175, Seconds: 10.7936
+Epoch: 108, Train perf: 0.9062, Train Loss: 0.0869, Val: 0.6194, Test: 0.6175, Seconds: 10.5887
+Epoch: 109, Train perf: 0.9062, Train Loss: 0.0863, Val: 0.6173, Test: 0.6175, Seconds: 10.6568
+Epoch: 110, Train perf: 0.9068, Train Loss: 0.0864, Val: 0.6256, Test: 0.6175, Seconds: 10.6292
+Epoch: 111, Train perf: 0.9087, Train Loss: 0.0855, Val: 0.6234, Test: 0.6175, Seconds: 10.6615
+Epoch: 112, Train perf: 0.9084, Train Loss: 0.0858, Val: 0.6231, Test: 0.6175, Seconds: 10.6801
+Epoch: 113, Train perf: 0.9069, Train Loss: 0.0848, Val: 0.6199, Test: 0.6175, Seconds: 10.7366
+Epoch: 114, Train perf: 0.9094, Train Loss: 0.0837, Val: 0.6166, Test: 0.6175, Seconds: 10.5700
+Epoch: 115, Train perf: 0.9125, Train Loss: 0.0829, Val: 0.6165, Test: 0.6175, Seconds: 10.6307
+Epoch: 116, Train perf: 0.9098, Train Loss: 0.0837, Val: 0.6169, Test: 0.6175, Seconds: 10.9750
+Epoch: 117, Train perf: 0.9150, Train Loss: 0.0817, Val: 0.6182, Test: 0.6175, Seconds: 10.6015
+Epoch: 118, Train perf: 0.9124, Train Loss: 0.0822, Val: 0.6166, Test: 0.6175, Seconds: 10.6373
+Epoch: 119, Train perf: 0.9153, Train Loss: 0.0807, Val: 0.6248, Test: 0.6175, Seconds: 10.6525
+Epoch 00120: reducing learning rate of group 0 to 1.2500e-04.
+Epoch: 120, Train perf: 0.9179, Train Loss: 0.0798, Val: 0.6242, Test: 0.6175, Seconds: 10.6112
+Epoch: 121, Train perf: 0.9217, Train Loss: 0.0782, Val: 0.6186, Test: 0.6175, Seconds: 10.6411
+Epoch: 122, Train perf: 0.9214, Train Loss: 0.0779, Val: 0.6143, Test: 0.6175, Seconds: 10.6587
+Epoch: 123, Train perf: 0.9224, Train Loss: 0.0777, Val: 0.6188, Test: 0.6175, Seconds: 10.9419
+Epoch: 124, Train perf: 0.9222, Train Loss: 0.0778, Val: 0.6245, Test: 0.6175, Seconds: 10.9358
+Epoch: 125, Train perf: 0.9238, Train Loss: 0.0772, Val: 0.6224, Test: 0.6175, Seconds: 10.8685
+Epoch: 126, Train perf: 0.9250, Train Loss: 0.0774, Val: 0.6184, Test: 0.6175, Seconds: 10.6478
+Epoch: 127, Train perf: 0.9250, Train Loss: 0.0770, Val: 0.6257, Test: 0.6175, Seconds: 10.6865
+Epoch: 128, Train perf: 0.9259, Train Loss: 0.0759, Val: 0.6237, Test: 0.6175, Seconds: 10.6867
+Epoch: 129, Train perf: 0.9270, Train Loss: 0.0749, Val: 0.6169, Test: 0.6175, Seconds: 10.7950
+Epoch: 130, Train perf: 0.9266, Train Loss: 0.0760, Val: 0.6212, Test: 0.6175, Seconds: 10.6484
+Epoch: 131, Train perf: 0.9279, Train Loss: 0.0744, Val: 0.6158, Test: 0.6175, Seconds: 10.7895
+Epoch: 132, Train perf: 0.9291, Train Loss: 0.0749, Val: 0.6174, Test: 0.6175, Seconds: 10.6334
+Epoch: 133, Train perf: 0.9287, Train Loss: 0.0742, Val: 0.6237, Test: 0.6175, Seconds: 10.6352
+Epoch: 134, Train perf: 0.9290, Train Loss: 0.0745, Val: 0.6247, Test: 0.6175, Seconds: 10.6745
+Epoch: 135, Train perf: 0.9250, Train Loss: 0.0745, Val: 0.6208, Test: 0.6175, Seconds: 10.9339
+Epoch: 136, Train perf: 0.9283, Train Loss: 0.0739, Val: 0.6169, Test: 0.6175, Seconds: 10.7134
+Epoch: 137, Train perf: 0.9292, Train Loss: 0.0731, Val: 0.6209, Test: 0.6175, Seconds: 10.6666
+Epoch: 138, Train perf: 0.9297, Train Loss: 0.0729, Val: 0.6204, Test: 0.6175, Seconds: 10.7429
+Epoch: 139, Train perf: 0.9316, Train Loss: 0.0731, Val: 0.6135, Test: 0.6175, Seconds: 10.6862
+Epoch: 140, Train perf: 0.9291, Train Loss: 0.0735, Val: 0.6203, Test: 0.6175, Seconds: 10.6038
+Epoch 00141: reducing learning rate of group 0 to 6.2500e-05.
+Epoch: 141, Train perf: 0.9354, Train Loss: 0.0706, Val: 0.6214, Test: 0.6175, Seconds: 10.6924
+Epoch: 142, Train perf: 0.9353, Train Loss: 0.0711, Val: 0.6188, Test: 0.6175, Seconds: 10.7168
+Epoch: 143, Train perf: 0.9355, Train Loss: 0.0713, Val: 0.6225, Test: 0.6175, Seconds: 10.7251
+Epoch: 144, Train perf: 0.9360, Train Loss: 0.0708, Val: 0.6174, Test: 0.6175, Seconds: 10.5716
+Epoch: 145, Train perf: 0.9370, Train Loss: 0.0701, Val: 0.6185, Test: 0.6175, Seconds: 11.2731
+Epoch: 146, Train perf: 0.9367, Train Loss: 0.0697, Val: 0.6192, Test: 0.6175, Seconds: 10.8086
+Epoch: 147, Train perf: 0.9352, Train Loss: 0.0699, Val: 0.6210, Test: 0.6175, Seconds: 10.9767
+Epoch: 148, Train perf: 0.9362, Train Loss: 0.0705, Val: 0.6204, Test: 0.6175, Seconds: 10.8624
+Epoch: 149, Train perf: 0.9342, Train Loss: 0.0702, Val: 0.6156, Test: 0.6175, Seconds: 10.8776
+Epoch: 150, Train perf: 0.9352, Train Loss: 0.0706, Val: 0.6245, Test: 0.6175, Seconds: 10.8647
+Epoch: 151, Train perf: 0.9357, Train Loss: 0.0708, Val: 0.6233, Test: 0.6175, Seconds: 10.6507
+Epoch: 152, Train perf: 0.9370, Train Loss: 0.0689, Val: 0.6196, Test: 0.6175, Seconds: 10.9962
+Epoch: 153, Train perf: 0.9372, Train Loss: 0.0691, Val: 0.6197, Test: 0.6175, Seconds: 10.6148
+Epoch: 154, Train perf: 0.9399, Train Loss: 0.0686, Val: 0.6287, Test: 0.6242, Seconds: 12.4792
+Epoch: 155, Train perf: 0.9389, Train Loss: 0.0684, Val: 0.6233, Test: 0.6242, Seconds: 10.8219
+Epoch: 156, Train perf: 0.9379, Train Loss: 0.0693, Val: 0.6232, Test: 0.6242, Seconds: 10.7649
+Epoch: 157, Train perf: 0.9357, Train Loss: 0.0691, Val: 0.6194, Test: 0.6242, Seconds: 10.5151
+Epoch: 158, Train perf: 0.9362, Train Loss: 0.0691, Val: 0.6195, Test: 0.6242, Seconds: 10.6122
+Epoch: 159, Train perf: 0.9398, Train Loss: 0.0684, Val: 0.6217, Test: 0.6242, Seconds: 10.6104
+Epoch: 160, Train perf: 0.9381, Train Loss: 0.0692, Val: 0.6220, Test: 0.6242, Seconds: 10.6846
+Epoch: 161, Train perf: 0.9385, Train Loss: 0.0679, Val: 0.6150, Test: 0.6242, Seconds: 10.7136
+Epoch 00162: reducing learning rate of group 0 to 3.1250e-05.
+Epoch: 162, Train perf: 0.9399, Train Loss: 0.0678, Val: 0.6160, Test: 0.6242, Seconds: 10.7564
+Epoch: 163, Train perf: 0.9390, Train Loss: 0.0685, Val: 0.6220, Test: 0.6242, Seconds: 10.6909
+Epoch: 164, Train perf: 0.9397, Train Loss: 0.0674, Val: 0.6167, Test: 0.6242, Seconds: 10.8440
+Epoch: 165, Train perf: 0.9402, Train Loss: 0.0675, Val: 0.6229, Test: 0.6242, Seconds: 10.6863
+Epoch: 166, Train perf: 0.9400, Train Loss: 0.0673, Val: 0.6171, Test: 0.6242, Seconds: 10.7774
+Epoch: 167, Train perf: 0.9408, Train Loss: 0.0674, Val: 0.6145, Test: 0.6242, Seconds: 10.7423
+Epoch: 168, Train perf: 0.9407, Train Loss: 0.0678, Val: 0.6166, Test: 0.6242, Seconds: 10.9899
+Epoch: 169, Train perf: 0.9411, Train Loss: 0.0668, Val: 0.6230, Test: 0.6242, Seconds: 10.7433
+Epoch: 170, Train perf: 0.9419, Train Loss: 0.0673, Val: 0.6182, Test: 0.6242, Seconds: 10.6226
+Epoch: 171, Train perf: 0.9427, Train Loss: 0.0662, Val: 0.6192, Test: 0.6242, Seconds: 10.9129
+Epoch: 172, Train perf: 0.9414, Train Loss: 0.0670, Val: 0.6163, Test: 0.6242, Seconds: 10.7798
+Epoch: 173, Train perf: 0.9426, Train Loss: 0.0657, Val: 0.6144, Test: 0.6242, Seconds: 11.0071
+Epoch: 174, Train perf: 0.9406, Train Loss: 0.0677, Val: 0.6199, Test: 0.6242, Seconds: 10.7011
+Epoch: 175, Train perf: 0.9439, Train Loss: 0.0663, Val: 0.6199, Test: 0.6242, Seconds: 10.6535
+Epoch: 176, Train perf: 0.9407, Train Loss: 0.0668, Val: 0.6187, Test: 0.6242, Seconds: 10.7032
+Epoch: 177, Train perf: 0.9399, Train Loss: 0.0668, Val: 0.6215, Test: 0.6242, Seconds: 10.6090
+Epoch: 178, Train perf: 0.9418, Train Loss: 0.0662, Val: 0.6169, Test: 0.6242, Seconds: 10.7213
+Epoch: 179, Train perf: 0.9409, Train Loss: 0.0662, Val: 0.6188, Test: 0.6242, Seconds: 10.8032
+Epoch: 180, Train perf: 0.9415, Train Loss: 0.0662, Val: 0.6233, Test: 0.6242, Seconds: 10.7212
+Epoch: 181, Train perf: 0.9433, Train Loss: 0.0661, Val: 0.6158, Test: 0.6242, Seconds: 10.5636
+Epoch: 182, Train perf: 0.9399, Train Loss: 0.0670, Val: 0.6167, Test: 0.6242, Seconds: 10.6483
+Epoch 00183: reducing learning rate of group 0 to 1.5625e-05.
+Epoch: 183, Train perf: 0.9440, Train Loss: 0.0659, Val: 0.6160, Test: 0.6242, Seconds: 11.0279
+Epoch: 184, Train perf: 0.9431, Train Loss: 0.0656, Val: 0.6172, Test: 0.6242, Seconds: 10.6915
+Epoch: 185, Train perf: 0.9441, Train Loss: 0.0654, Val: 0.6191, Test: 0.6242, Seconds: 10.7243
+Epoch: 186, Train perf: 0.9433, Train Loss: 0.0658, Val: 0.6198, Test: 0.6242, Seconds: 10.6047
+Epoch: 187, Train perf: 0.9433, Train Loss: 0.0650, Val: 0.6224, Test: 0.6242, Seconds: 10.5434
+Epoch: 188, Train perf: 0.9396, Train Loss: 0.0660, Val: 0.6114, Test: 0.6242, Seconds: 10.6577
+Epoch: 189, Train perf: 0.9436, Train Loss: 0.0650, Val: 0.6222, Test: 0.6242, Seconds: 10.6895
+Epoch: 190, Train perf: 0.9423, Train Loss: 0.0659, Val: 0.6132, Test: 0.6242, Seconds: 11.1821
+Epoch: 191, Train perf: 0.9427, Train Loss: 0.0661, Val: 0.6200, Test: 0.6242, Seconds: 10.8699
+Epoch: 192, Train perf: 0.9431, Train Loss: 0.0660, Val: 0.6197, Test: 0.6242, Seconds: 11.0099
+Epoch: 193, Train perf: 0.9422, Train Loss: 0.0661, Val: 0.6238, Test: 0.6242, Seconds: 10.8650
+Epoch: 194, Train perf: 0.9439, Train Loss: 0.0652, Val: 0.6220, Test: 0.6242, Seconds: 10.7328
+Epoch: 195, Train perf: 0.9449, Train Loss: 0.0651, Val: 0.6147, Test: 0.6242, Seconds: 10.6866
+Epoch: 196, Train perf: 0.9461, Train Loss: 0.0647, Val: 0.6160, Test: 0.6242, Seconds: 10.6147
+Epoch: 197, Train perf: 0.9444, Train Loss: 0.0653, Val: 0.6213, Test: 0.6242, Seconds: 10.7276
+Epoch: 198, Train perf: 0.9416, Train Loss: 0.0660, Val: 0.6186, Test: 0.6242, Seconds: 10.8111
+Epoch: 199, Train perf: 0.9451, Train Loss: 0.0654, Val: 0.6157, Test: 0.6242, Seconds: 10.7059
+
+Run:  0
+Train Loss: 0.0654
+Train Accuracy: 0.9451
+Vali Accuracy: 0.6287
+Test Accuracy: 0.6242
+Convergence Time (Epochs): 200
+AVG TIME PER EPOCH: 11.1146 s
+TOTAL TIME TAKEN: 0.6175 h
+
+----------SEED ---------: 32
+
+
+Number of parameters: 346206
+Epoch: 000, Train perf: 0.2636, Train Loss: 0.4252, Val: 0.3502, Test: 0.3380, Seconds: 12.2452
+Epoch: 001, Train perf: 0.3550, Train Loss: 0.3038, Val: 0.3851, Test: 0.3734, Seconds: 12.2658
+Epoch: 002, Train perf: 0.3880, Train Loss: 0.2898, Val: 0.4182, Test: 0.4003, Seconds: 12.4171
+Epoch: 003, Train perf: 0.4056, Train Loss: 0.2822, Val: 0.4191, Test: 0.4073, Seconds: 12.3406
+Epoch: 004, Train perf: 0.4174, Train Loss: 0.2773, Val: 0.4385, Test: 0.4130, Seconds: 12.2904
+Epoch: 005, Train perf: 0.4289, Train Loss: 0.2729, Val: 0.4491, Test: 0.4284, Seconds: 12.3832
+Epoch: 006, Train perf: 0.4395, Train Loss: 0.2684, Val: 0.4516, Test: 0.4297, Seconds: 12.2090
+Epoch: 007, Train perf: 0.4472, Train Loss: 0.2664, Val: 0.4559, Test: 0.4437, Seconds: 12.2072
+Epoch: 008, Train perf: 0.4583, Train Loss: 0.2630, Val: 0.4623, Test: 0.4397, Seconds: 12.3565
+Epoch: 009, Train perf: 0.4617, Train Loss: 0.2609, Val: 0.4711, Test: 0.4488, Seconds: 12.4242
+Epoch: 010, Train perf: 0.4737, Train Loss: 0.2567, Val: 0.4733, Test: 0.4548, Seconds: 12.3353
+Epoch: 011, Train perf: 0.4835, Train Loss: 0.2540, Val: 0.4971, Test: 0.4657, Seconds: 13.0182
+Epoch: 012, Train perf: 0.4884, Train Loss: 0.2518, Val: 0.4967, Test: 0.4657, Seconds: 10.7258
+Epoch: 013, Train perf: 0.5051, Train Loss: 0.2479, Val: 0.5062, Test: 0.4721, Seconds: 12.2046
+Epoch: 014, Train perf: 0.5069, Train Loss: 0.2457, Val: 0.5143, Test: 0.4888, Seconds: 12.0901
+Epoch: 015, Train perf: 0.5098, Train Loss: 0.2438, Val: 0.5220, Test: 0.4834, Seconds: 12.2622
+Epoch: 016, Train perf: 0.5180, Train Loss: 0.2421, Val: 0.5148, Test: 0.4834, Seconds: 10.5309
+Epoch: 017, Train perf: 0.5297, Train Loss: 0.2393, Val: 0.5247, Test: 0.4920, Seconds: 12.0811
+Epoch: 018, Train perf: 0.5348, Train Loss: 0.2373, Val: 0.5186, Test: 0.4920, Seconds: 10.4885
+Epoch: 019, Train perf: 0.5414, Train Loss: 0.2347, Val: 0.5387, Test: 0.5109, Seconds: 12.1948
+Epoch: 020, Train perf: 0.5430, Train Loss: 0.2335, Val: 0.5362, Test: 0.5109, Seconds: 10.5148
+Epoch: 021, Train perf: 0.5521, Train Loss: 0.2309, Val: 0.5407, Test: 0.5034, Seconds: 12.2226
+Epoch: 022, Train perf: 0.5585, Train Loss: 0.2288, Val: 0.5447, Test: 0.5124, Seconds: 12.2479
+Epoch: 023, Train perf: 0.5629, Train Loss: 0.2272, Val: 0.5518, Test: 0.5157, Seconds: 12.1221
+Epoch: 024, Train perf: 0.5676, Train Loss: 0.2259, Val: 0.5608, Test: 0.5128, Seconds: 12.1645
+Epoch: 025, Train perf: 0.5731, Train Loss: 0.2241, Val: 0.5544, Test: 0.5128, Seconds: 10.5823
+Epoch: 026, Train perf: 0.5699, Train Loss: 0.2234, Val: 0.5555, Test: 0.5128, Seconds: 10.5680
+Epoch: 027, Train perf: 0.5787, Train Loss: 0.2228, Val: 0.5718, Test: 0.5319, Seconds: 12.3700
+Epoch: 028, Train perf: 0.5854, Train Loss: 0.2200, Val: 0.5658, Test: 0.5319, Seconds: 10.6958
+Epoch: 029, Train perf: 0.5886, Train Loss: 0.2182, Val: 0.5661, Test: 0.5319, Seconds: 10.4250
+Epoch: 030, Train perf: 0.5980, Train Loss: 0.2157, Val: 0.5735, Test: 0.5383, Seconds: 12.2589
+Epoch: 031, Train perf: 0.6026, Train Loss: 0.2140, Val: 0.5698, Test: 0.5383, Seconds: 10.4869
+Epoch: 032, Train perf: 0.6027, Train Loss: 0.2138, Val: 0.5697, Test: 0.5383, Seconds: 11.0051
+Epoch: 033, Train perf: 0.6068, Train Loss: 0.2126, Val: 0.5671, Test: 0.5383, Seconds: 10.8569
+Epoch: 034, Train perf: 0.6111, Train Loss: 0.2113, Val: 0.5824, Test: 0.5429, Seconds: 12.4351
+Epoch: 035, Train perf: 0.6219, Train Loss: 0.2087, Val: 0.5781, Test: 0.5429, Seconds: 10.6305
+Epoch: 036, Train perf: 0.6188, Train Loss: 0.2084, Val: 0.5811, Test: 0.5429, Seconds: 10.7138
+Epoch: 037, Train perf: 0.6229, Train Loss: 0.2070, Val: 0.5807, Test: 0.5429, Seconds: 10.6143
+Epoch: 038, Train perf: 0.6322, Train Loss: 0.2036, Val: 0.5910, Test: 0.5551, Seconds: 12.1565
+Epoch: 039, Train perf: 0.6308, Train Loss: 0.2044, Val: 0.5937, Test: 0.5611, Seconds: 12.2248
+Epoch: 040, Train perf: 0.6403, Train Loss: 0.2017, Val: 0.5889, Test: 0.5611, Seconds: 10.5527
+Epoch: 041, Train perf: 0.6437, Train Loss: 0.1999, Val: 0.5920, Test: 0.5611, Seconds: 10.4607
+Epoch: 042, Train perf: 0.6436, Train Loss: 0.1992, Val: 0.5815, Test: 0.5611, Seconds: 10.6576
+Epoch: 043, Train perf: 0.6456, Train Loss: 0.1984, Val: 0.5931, Test: 0.5611, Seconds: 10.5651
+Epoch: 044, Train perf: 0.6502, Train Loss: 0.1968, Val: 0.5995, Test: 0.5598, Seconds: 12.2266
+Epoch: 045, Train perf: 0.6568, Train Loss: 0.1946, Val: 0.5912, Test: 0.5598, Seconds: 10.5408
+Epoch: 046, Train perf: 0.6645, Train Loss: 0.1925, Val: 0.5862, Test: 0.5598, Seconds: 10.8041
+Epoch: 047, Train perf: 0.6677, Train Loss: 0.1906, Val: 0.6094, Test: 0.5711, Seconds: 12.2295
+Epoch: 048, Train perf: 0.6671, Train Loss: 0.1909, Val: 0.6073, Test: 0.5711, Seconds: 10.5977
+Epoch: 049, Train perf: 0.6705, Train Loss: 0.1885, Val: 0.6078, Test: 0.5711, Seconds: 10.4570
+Epoch: 050, Train perf: 0.6801, Train Loss: 0.1865, Val: 0.6023, Test: 0.5711, Seconds: 10.6277
+Epoch: 051, Train perf: 0.6836, Train Loss: 0.1851, Val: 0.6128, Test: 0.5714, Seconds: 12.3655
+Epoch: 052, Train perf: 0.6894, Train Loss: 0.1828, Val: 0.6087, Test: 0.5714, Seconds: 10.5932
+Epoch: 053, Train perf: 0.6880, Train Loss: 0.1836, Val: 0.6102, Test: 0.5714, Seconds: 10.5245
+Epoch: 054, Train perf: 0.6945, Train Loss: 0.1808, Val: 0.5976, Test: 0.5714, Seconds: 10.8946
+Epoch: 055, Train perf: 0.7020, Train Loss: 0.1789, Val: 0.6131, Test: 0.5871, Seconds: 12.6612
+Epoch: 056, Train perf: 0.7082, Train Loss: 0.1767, Val: 0.6150, Test: 0.5745, Seconds: 12.4237
+Epoch: 057, Train perf: 0.7117, Train Loss: 0.1758, Val: 0.6187, Test: 0.5831, Seconds: 12.2125
+Epoch: 058, Train perf: 0.7125, Train Loss: 0.1742, Val: 0.6133, Test: 0.5831, Seconds: 10.6812
+Epoch: 059, Train perf: 0.7220, Train Loss: 0.1718, Val: 0.6177, Test: 0.5831, Seconds: 10.5705
+Epoch: 060, Train perf: 0.7202, Train Loss: 0.1704, Val: 0.6150, Test: 0.5831, Seconds: 10.5588
+Epoch: 061, Train perf: 0.7258, Train Loss: 0.1687, Val: 0.6167, Test: 0.5831, Seconds: 10.6909
+Epoch: 062, Train perf: 0.7301, Train Loss: 0.1672, Val: 0.6197, Test: 0.5982, Seconds: 12.4229
+Epoch: 063, Train perf: 0.7318, Train Loss: 0.1663, Val: 0.6141, Test: 0.5982, Seconds: 10.6197
+Epoch: 064, Train perf: 0.7391, Train Loss: 0.1629, Val: 0.6147, Test: 0.5982, Seconds: 10.6390
+Epoch: 065, Train perf: 0.7419, Train Loss: 0.1613, Val: 0.6152, Test: 0.5982, Seconds: 10.7622
+Epoch: 066, Train perf: 0.7515, Train Loss: 0.1589, Val: 0.6197, Test: 0.5982, Seconds: 10.6760
+Epoch: 067, Train perf: 0.7527, Train Loss: 0.1583, Val: 0.6183, Test: 0.5982, Seconds: 10.5442
+Epoch: 068, Train perf: 0.7568, Train Loss: 0.1557, Val: 0.6251, Test: 0.5937, Seconds: 12.3228
+Epoch: 069, Train perf: 0.7674, Train Loss: 0.1526, Val: 0.6225, Test: 0.5937, Seconds: 10.5754
+Epoch: 070, Train perf: 0.7660, Train Loss: 0.1531, Val: 0.6249, Test: 0.5937, Seconds: 10.5313
+Epoch: 071, Train perf: 0.7699, Train Loss: 0.1507, Val: 0.6260, Test: 0.5966, Seconds: 12.5374
+Epoch: 072, Train perf: 0.7743, Train Loss: 0.1492, Val: 0.6185, Test: 0.5966, Seconds: 8.8368
+Epoch: 073, Train perf: 0.7752, Train Loss: 0.1467, Val: 0.6192, Test: 0.5966, Seconds: 9.4734
+Epoch: 074, Train perf: 0.7784, Train Loss: 0.1467, Val: 0.6244, Test: 0.5966, Seconds: 10.9569
+Epoch: 075, Train perf: 0.7798, Train Loss: 0.1452, Val: 0.6281, Test: 0.5887, Seconds: 13.0267
+Epoch: 076, Train perf: 0.7916, Train Loss: 0.1419, Val: 0.6173, Test: 0.5887, Seconds: 11.4118
+Epoch: 077, Train perf: 0.7895, Train Loss: 0.1415, Val: 0.6270, Test: 0.5887, Seconds: 11.3518
+Epoch: 078, Train perf: 0.7944, Train Loss: 0.1393, Val: 0.6359, Test: 0.6014, Seconds: 12.5972
+Epoch: 079, Train perf: 0.8023, Train Loss: 0.1364, Val: 0.6213, Test: 0.6014, Seconds: 10.8566
+Epoch: 080, Train perf: 0.8049, Train Loss: 0.1359, Val: 0.6278, Test: 0.6014, Seconds: 10.9440
+Epoch 00081: reducing learning rate of group 0 to 5.0000e-04.
+Epoch: 081, Train perf: 0.8287, Train Loss: 0.1258, Val: 0.6303, Test: 0.6014, Seconds: 10.8751
+Epoch: 082, Train perf: 0.8332, Train Loss: 0.1233, Val: 0.6357, Test: 0.6014, Seconds: 10.9278
+Epoch: 083, Train perf: 0.8378, Train Loss: 0.1204, Val: 0.6325, Test: 0.6014, Seconds: 11.1619
+Epoch: 084, Train perf: 0.8423, Train Loss: 0.1180, Val: 0.6292, Test: 0.6014, Seconds: 11.2643
+Epoch: 085, Train perf: 0.8444, Train Loss: 0.1178, Val: 0.6378, Test: 0.6057, Seconds: 12.5314
+Epoch: 086, Train perf: 0.8472, Train Loss: 0.1170, Val: 0.6405, Test: 0.6060, Seconds: 12.5904
+Epoch: 087, Train perf: 0.8487, Train Loss: 0.1159, Val: 0.6370, Test: 0.6060, Seconds: 10.8099
+Epoch: 088, Train perf: 0.8492, Train Loss: 0.1155, Val: 0.6337, Test: 0.6060, Seconds: 10.9400
+Epoch: 089, Train perf: 0.8478, Train Loss: 0.1146, Val: 0.6273, Test: 0.6060, Seconds: 10.9732
+Epoch: 090, Train perf: 0.8526, Train Loss: 0.1130, Val: 0.6310, Test: 0.6060, Seconds: 10.8422
+Epoch: 091, Train perf: 0.8519, Train Loss: 0.1131, Val: 0.6231, Test: 0.6060, Seconds: 10.7360
+Epoch: 092, Train perf: 0.8605, Train Loss: 0.1099, Val: 0.6368, Test: 0.6060, Seconds: 10.9008
+Epoch: 093, Train perf: 0.8617, Train Loss: 0.1100, Val: 0.6332, Test: 0.6060, Seconds: 11.2586
+Epoch: 094, Train perf: 0.8623, Train Loss: 0.1092, Val: 0.6245, Test: 0.6060, Seconds: 11.1037
+Epoch: 095, Train perf: 0.8630, Train Loss: 0.1075, Val: 0.6290, Test: 0.6060, Seconds: 10.8518
+Epoch: 096, Train perf: 0.8644, Train Loss: 0.1070, Val: 0.6312, Test: 0.6060, Seconds: 10.9129
+Epoch: 097, Train perf: 0.8678, Train Loss: 0.1053, Val: 0.6329, Test: 0.6060, Seconds: 11.2475
+Epoch: 098, Train perf: 0.8715, Train Loss: 0.1051, Val: 0.6253, Test: 0.6060, Seconds: 11.1638
+Epoch: 099, Train perf: 0.8752, Train Loss: 0.1033, Val: 0.6385, Test: 0.6060, Seconds: 11.1412
+Epoch: 100, Train perf: 0.8753, Train Loss: 0.1029, Val: 0.6328, Test: 0.6060, Seconds: 10.9748
+Epoch: 101, Train perf: 0.8794, Train Loss: 0.1001, Val: 0.6311, Test: 0.6060, Seconds: 11.0537
+Epoch 00102: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 102, Train perf: 0.8894, Train Loss: 0.0962, Val: 0.6348, Test: 0.6060, Seconds: 10.9699
+Epoch: 103, Train perf: 0.8932, Train Loss: 0.0942, Val: 0.6377, Test: 0.6060, Seconds: 10.8868
+Epoch: 104, Train perf: 0.8932, Train Loss: 0.0941, Val: 0.6279, Test: 0.6060, Seconds: 11.1575
+Epoch: 105, Train perf: 0.8930, Train Loss: 0.0937, Val: 0.6386, Test: 0.6060, Seconds: 10.8457
+Epoch: 106, Train perf: 0.8977, Train Loss: 0.0923, Val: 0.6334, Test: 0.6060, Seconds: 11.0529
+Epoch: 107, Train perf: 0.8939, Train Loss: 0.0926, Val: 0.6365, Test: 0.6060, Seconds: 10.8918
+Epoch: 108, Train perf: 0.9004, Train Loss: 0.0909, Val: 0.6350, Test: 0.6060, Seconds: 10.9286
+Epoch: 109, Train perf: 0.8981, Train Loss: 0.0916, Val: 0.6306, Test: 0.6060, Seconds: 10.9394
+Epoch: 110, Train perf: 0.9007, Train Loss: 0.0892, Val: 0.6299, Test: 0.6060, Seconds: 10.8581
+Epoch: 111, Train perf: 0.8992, Train Loss: 0.0909, Val: 0.6249, Test: 0.6060, Seconds: 11.0894
+Epoch: 112, Train perf: 0.9003, Train Loss: 0.0892, Val: 0.6363, Test: 0.6060, Seconds: 10.9673
+Epoch: 113, Train perf: 0.9055, Train Loss: 0.0885, Val: 0.6259, Test: 0.6060, Seconds: 10.8595
+Epoch: 114, Train perf: 0.9017, Train Loss: 0.0882, Val: 0.6337, Test: 0.6060, Seconds: 11.1150
+Epoch: 115, Train perf: 0.9053, Train Loss: 0.0881, Val: 0.6349, Test: 0.6060, Seconds: 10.9719
+Epoch: 116, Train perf: 0.9058, Train Loss: 0.0869, Val: 0.6382, Test: 0.6060, Seconds: 10.9444
+Epoch: 117, Train perf: 0.9067, Train Loss: 0.0873, Val: 0.6358, Test: 0.6060, Seconds: 10.8793
+Epoch: 118, Train perf: 0.9057, Train Loss: 0.0873, Val: 0.6284, Test: 0.6060, Seconds: 11.1777
+Epoch: 119, Train perf: 0.9062, Train Loss: 0.0855, Val: 0.6369, Test: 0.6060, Seconds: 11.3638
+Epoch: 120, Train perf: 0.9079, Train Loss: 0.0851, Val: 0.6353, Test: 0.6060, Seconds: 11.1291
+Epoch: 121, Train perf: 0.9075, Train Loss: 0.0848, Val: 0.6374, Test: 0.6060, Seconds: 11.0674
+Epoch: 122, Train perf: 0.9097, Train Loss: 0.0849, Val: 0.6335, Test: 0.6060, Seconds: 11.3221
+Epoch 00123: reducing learning rate of group 0 to 1.2500e-04.
+Epoch: 123, Train perf: 0.9151, Train Loss: 0.0821, Val: 0.6367, Test: 0.6060, Seconds: 10.9043
+Epoch: 124, Train perf: 0.9187, Train Loss: 0.0818, Val: 0.6334, Test: 0.6060, Seconds: 10.9432
+Epoch: 125, Train perf: 0.9190, Train Loss: 0.0799, Val: 0.6369, Test: 0.6060, Seconds: 10.9900
+Epoch: 126, Train perf: 0.9201, Train Loss: 0.0801, Val: 0.6332, Test: 0.6060, Seconds: 10.8084
+Epoch: 127, Train perf: 0.9209, Train Loss: 0.0796, Val: 0.6325, Test: 0.6060, Seconds: 11.0423
+Epoch: 128, Train perf: 0.9191, Train Loss: 0.0799, Val: 0.6334, Test: 0.6060, Seconds: 10.9905
+Epoch: 129, Train perf: 0.9222, Train Loss: 0.0789, Val: 0.6354, Test: 0.6060, Seconds: 10.8713
+Epoch: 130, Train perf: 0.9194, Train Loss: 0.0789, Val: 0.6331, Test: 0.6060, Seconds: 11.1368
+Epoch: 131, Train perf: 0.9225, Train Loss: 0.0784, Val: 0.6335, Test: 0.6060, Seconds: 10.8837
+Epoch: 132, Train perf: 0.9198, Train Loss: 0.0787, Val: 0.6325, Test: 0.6060, Seconds: 10.7428
+Epoch: 133, Train perf: 0.9217, Train Loss: 0.0784, Val: 0.6330, Test: 0.6060, Seconds: 10.9417
+Epoch: 134, Train perf: 0.9230, Train Loss: 0.0772, Val: 0.6308, Test: 0.6060, Seconds: 10.9493
+Epoch: 135, Train perf: 0.9257, Train Loss: 0.0762, Val: 0.6361, Test: 0.6060, Seconds: 10.8170
+Epoch: 136, Train perf: 0.9249, Train Loss: 0.0765, Val: 0.6321, Test: 0.6060, Seconds: 11.0407
+Epoch: 137, Train perf: 0.9249, Train Loss: 0.0765, Val: 0.6330, Test: 0.6060, Seconds: 11.2539
+Epoch: 138, Train perf: 0.9243, Train Loss: 0.0761, Val: 0.6278, Test: 0.6060, Seconds: 10.8453
+Epoch: 139, Train perf: 0.9261, Train Loss: 0.0767, Val: 0.6368, Test: 0.6060, Seconds: 10.7774
+Epoch: 140, Train perf: 0.9274, Train Loss: 0.0763, Val: 0.6323, Test: 0.6060, Seconds: 11.1979
+Epoch: 141, Train perf: 0.9239, Train Loss: 0.0763, Val: 0.6347, Test: 0.6060, Seconds: 11.0925
+Epoch: 142, Train perf: 0.9271, Train Loss: 0.0758, Val: 0.6337, Test: 0.6060, Seconds: 11.1395
+Epoch: 143, Train perf: 0.9269, Train Loss: 0.0758, Val: 0.6356, Test: 0.6060, Seconds: 11.0461
+Epoch 00144: reducing learning rate of group 0 to 6.2500e-05.
+Epoch: 144, Train perf: 0.9283, Train Loss: 0.0743, Val: 0.6340, Test: 0.6060, Seconds: 10.9480
+Epoch: 145, Train perf: 0.9332, Train Loss: 0.0739, Val: 0.6316, Test: 0.6060, Seconds: 11.0921
+Epoch: 146, Train perf: 0.9309, Train Loss: 0.0727, Val: 0.6323, Test: 0.6060, Seconds: 10.8942
+Epoch: 147, Train perf: 0.9282, Train Loss: 0.0741, Val: 0.6280, Test: 0.6060, Seconds: 11.1613
+Epoch: 148, Train perf: 0.9331, Train Loss: 0.0733, Val: 0.6373, Test: 0.6060, Seconds: 10.8698
+Epoch: 149, Train perf: 0.9317, Train Loss: 0.0728, Val: 0.6338, Test: 0.6060, Seconds: 11.0549
+Epoch: 150, Train perf: 0.9353, Train Loss: 0.0721, Val: 0.6331, Test: 0.6060, Seconds: 11.0505
+Epoch: 151, Train perf: 0.9316, Train Loss: 0.0728, Val: 0.6344, Test: 0.6060, Seconds: 10.8183
+Epoch: 152, Train perf: 0.9325, Train Loss: 0.0726, Val: 0.6278, Test: 0.6060, Seconds: 10.9633
+Epoch: 153, Train perf: 0.9348, Train Loss: 0.0719, Val: 0.6303, Test: 0.6060, Seconds: 10.8872
+Epoch: 154, Train perf: 0.9330, Train Loss: 0.0730, Val: 0.6353, Test: 0.6060, Seconds: 10.7883
+Epoch: 155, Train perf: 0.9311, Train Loss: 0.0722, Val: 0.6306, Test: 0.6060, Seconds: 10.8486
+Epoch: 156, Train perf: 0.9344, Train Loss: 0.0717, Val: 0.6359, Test: 0.6060, Seconds: 10.8434
+Epoch: 157, Train perf: 0.9369, Train Loss: 0.0716, Val: 0.6287, Test: 0.6060, Seconds: 10.7369
+Epoch: 158, Train perf: 0.9346, Train Loss: 0.0718, Val: 0.6253, Test: 0.6060, Seconds: 10.9449
+Epoch: 159, Train perf: 0.9331, Train Loss: 0.0719, Val: 0.6324, Test: 0.6060, Seconds: 11.2673
+Epoch: 160, Train perf: 0.9337, Train Loss: 0.0714, Val: 0.6326, Test: 0.6060, Seconds: 10.9268
+Epoch: 161, Train perf: 0.9342, Train Loss: 0.0715, Val: 0.6343, Test: 0.6060, Seconds: 10.9878
+Epoch: 162, Train perf: 0.9349, Train Loss: 0.0721, Val: 0.6324, Test: 0.6060, Seconds: 10.9147
+Epoch: 163, Train perf: 0.9364, Train Loss: 0.0706, Val: 0.6316, Test: 0.6060, Seconds: 11.0900
+Epoch: 164, Train perf: 0.9363, Train Loss: 0.0712, Val: 0.6304, Test: 0.6060, Seconds: 11.1702
+Epoch 00165: reducing learning rate of group 0 to 3.1250e-05.
+Epoch: 165, Train perf: 0.9354, Train Loss: 0.0709, Val: 0.6369, Test: 0.6060, Seconds: 11.1727
+Epoch: 166, Train perf: 0.9400, Train Loss: 0.0697, Val: 0.6271, Test: 0.6060, Seconds: 10.8065
+Epoch: 167, Train perf: 0.9366, Train Loss: 0.0694, Val: 0.6359, Test: 0.6060, Seconds: 11.1313
+Epoch: 168, Train perf: 0.9367, Train Loss: 0.0707, Val: 0.6269, Test: 0.6060, Seconds: 11.0001
+Epoch: 169, Train perf: 0.9393, Train Loss: 0.0687, Val: 0.6357, Test: 0.6060, Seconds: 11.0501
+Epoch: 170, Train perf: 0.9382, Train Loss: 0.0695, Val: 0.6351, Test: 0.6060, Seconds: 10.7419
+Epoch: 171, Train perf: 0.9360, Train Loss: 0.0694, Val: 0.6327, Test: 0.6060, Seconds: 10.8248
+Epoch: 172, Train perf: 0.9357, Train Loss: 0.0698, Val: 0.6381, Test: 0.6060, Seconds: 11.1592
+Epoch: 173, Train perf: 0.9374, Train Loss: 0.0702, Val: 0.6346, Test: 0.6060, Seconds: 11.0744
+Epoch: 174, Train perf: 0.9382, Train Loss: 0.0699, Val: 0.6337, Test: 0.6060, Seconds: 10.8347
+Epoch: 175, Train perf: 0.9390, Train Loss: 0.0695, Val: 0.6383, Test: 0.6060, Seconds: 10.8258
+Epoch: 176, Train perf: 0.9378, Train Loss: 0.0691, Val: 0.6315, Test: 0.6060, Seconds: 10.9103
+Epoch: 177, Train perf: 0.9380, Train Loss: 0.0699, Val: 0.6337, Test: 0.6060, Seconds: 11.0698
+Epoch: 178, Train perf: 0.9388, Train Loss: 0.0692, Val: 0.6364, Test: 0.6060, Seconds: 11.0836
+Epoch: 179, Train perf: 0.9403, Train Loss: 0.0684, Val: 0.6331, Test: 0.6060, Seconds: 10.8898
+Epoch: 180, Train perf: 0.9389, Train Loss: 0.0690, Val: 0.6263, Test: 0.6060, Seconds: 10.8129
+Epoch: 181, Train perf: 0.9389, Train Loss: 0.0678, Val: 0.6312, Test: 0.6060, Seconds: 10.7117
+Epoch: 182, Train perf: 0.9366, Train Loss: 0.0699, Val: 0.6380, Test: 0.6060, Seconds: 10.8359
+Epoch: 183, Train perf: 0.9378, Train Loss: 0.0696, Val: 0.6351, Test: 0.6060, Seconds: 10.7990
+Epoch: 184, Train perf: 0.9380, Train Loss: 0.0691, Val: 0.6318, Test: 0.6060, Seconds: 10.8757
+Epoch: 185, Train perf: 0.9365, Train Loss: 0.0693, Val: 0.6324, Test: 0.6060, Seconds: 11.1047
+Epoch 00186: reducing learning rate of group 0 to 1.5625e-05.
+Epoch: 186, Train perf: 0.9416, Train Loss: 0.0684, Val: 0.6309, Test: 0.6060, Seconds: 11.1211
+Epoch: 187, Train perf: 0.9404, Train Loss: 0.0684, Val: 0.6276, Test: 0.6060, Seconds: 11.2929
+Epoch: 188, Train perf: 0.9419, Train Loss: 0.0683, Val: 0.6310, Test: 0.6060, Seconds: 10.9218
+Epoch: 189, Train perf: 0.9399, Train Loss: 0.0687, Val: 0.6356, Test: 0.6060, Seconds: 10.7794
+Epoch: 190, Train perf: 0.9366, Train Loss: 0.0692, Val: 0.6378, Test: 0.6060, Seconds: 10.9470
+Epoch: 191, Train perf: 0.9415, Train Loss: 0.0684, Val: 0.6338, Test: 0.6060, Seconds: 10.7816
+Epoch: 192, Train perf: 0.9429, Train Loss: 0.0681, Val: 0.6304, Test: 0.6060, Seconds: 10.8499
+Epoch: 193, Train perf: 0.9426, Train Loss: 0.0673, Val: 0.6352, Test: 0.6060, Seconds: 11.0553
+Epoch: 194, Train perf: 0.9390, Train Loss: 0.0689, Val: 0.6265, Test: 0.6060, Seconds: 10.8606
+Epoch: 195, Train perf: 0.9397, Train Loss: 0.0684, Val: 0.6417, Test: 0.6048, Seconds: 12.5023
+Epoch: 196, Train perf: 0.9404, Train Loss: 0.0685, Val: 0.6313, Test: 0.6048, Seconds: 10.9643
+Epoch: 197, Train perf: 0.9417, Train Loss: 0.0678, Val: 0.6325, Test: 0.6048, Seconds: 10.9660
+Epoch: 198, Train perf: 0.9427, Train Loss: 0.0680, Val: 0.6300, Test: 0.6048, Seconds: 10.7786
+Epoch: 199, Train perf: 0.9428, Train Loss: 0.0672, Val: 0.6350, Test: 0.6048, Seconds: 11.0044
+
+Run:  1
+Train Loss: 0.0672
+Train Accuracy: 0.9428
+Vali Accuracy: 0.6417
+Test Accuracy: 0.6048
+Convergence Time (Epochs): 200
+AVG TIME PER EPOCH: 11.1712 s
+TOTAL TIME TAKEN: 0.6206 h
+
+----------SEED ---------: 65
+
+
+Number of parameters: 346206
+Epoch: 000, Train perf: 0.2544, Train Loss: 0.4156, Val: 0.3422, Test: 0.3306, Seconds: 12.7034
+Epoch: 001, Train perf: 0.3585, Train Loss: 0.3037, Val: 0.3791, Test: 0.3655, Seconds: 12.6224
+Epoch: 002, Train perf: 0.3871, Train Loss: 0.2897, Val: 0.4150, Test: 0.4023, Seconds: 12.5856
+Epoch: 003, Train perf: 0.4081, Train Loss: 0.2824, Val: 0.4224, Test: 0.4113, Seconds: 13.1502
+Epoch: 004, Train perf: 0.4167, Train Loss: 0.2779, Val: 0.4366, Test: 0.4133, Seconds: 13.0176
+Epoch: 005, Train perf: 0.4358, Train Loss: 0.2713, Val: 0.4568, Test: 0.4350, Seconds: 12.6765
+Epoch: 006, Train perf: 0.4479, Train Loss: 0.2671, Val: 0.4563, Test: 0.4350, Seconds: 11.9075
+Epoch: 007, Train perf: 0.4522, Train Loss: 0.2643, Val: 0.4753, Test: 0.4474, Seconds: 12.7280
+Epoch: 008, Train perf: 0.4642, Train Loss: 0.2617, Val: 0.4757, Test: 0.4561, Seconds: 12.5227
+Epoch: 009, Train perf: 0.4709, Train Loss: 0.2581, Val: 0.4837, Test: 0.4582, Seconds: 12.5138
+Epoch: 010, Train perf: 0.4788, Train Loss: 0.2551, Val: 0.4851, Test: 0.4668, Seconds: 12.5132
+Epoch: 011, Train perf: 0.4859, Train Loss: 0.2532, Val: 0.4916, Test: 0.4593, Seconds: 12.4087
+Epoch: 012, Train perf: 0.4950, Train Loss: 0.2511, Val: 0.4934, Test: 0.4645, Seconds: 12.3334
+Epoch: 013, Train perf: 0.4993, Train Loss: 0.2495, Val: 0.5102, Test: 0.4797, Seconds: 12.3882
+Epoch: 014, Train perf: 0.5039, Train Loss: 0.2467, Val: 0.5077, Test: 0.4797, Seconds: 10.7141
+Epoch: 015, Train perf: 0.5127, Train Loss: 0.2450, Val: 0.5114, Test: 0.4915, Seconds: 12.5393
+Epoch: 016, Train perf: 0.5216, Train Loss: 0.2417, Val: 0.5243, Test: 0.4933, Seconds: 12.4149
+Epoch: 017, Train perf: 0.5341, Train Loss: 0.2379, Val: 0.5238, Test: 0.4933, Seconds: 10.7841
+Epoch: 018, Train perf: 0.5387, Train Loss: 0.2362, Val: 0.5221, Test: 0.4933, Seconds: 10.6634
+Epoch: 019, Train perf: 0.5472, Train Loss: 0.2344, Val: 0.5353, Test: 0.5028, Seconds: 12.3121
+Epoch: 020, Train perf: 0.5429, Train Loss: 0.2341, Val: 0.5320, Test: 0.5028, Seconds: 10.5906
+Epoch: 021, Train perf: 0.5527, Train Loss: 0.2310, Val: 0.5493, Test: 0.5253, Seconds: 12.2078
+Epoch: 022, Train perf: 0.5572, Train Loss: 0.2299, Val: 0.5438, Test: 0.5253, Seconds: 10.7469
+Epoch: 023, Train perf: 0.5636, Train Loss: 0.2280, Val: 0.5519, Test: 0.5213, Seconds: 12.3332
+Epoch: 024, Train perf: 0.5697, Train Loss: 0.2267, Val: 0.5545, Test: 0.5237, Seconds: 12.7142
+Epoch: 025, Train perf: 0.5722, Train Loss: 0.2244, Val: 0.5528, Test: 0.5237, Seconds: 10.6215
+Epoch: 026, Train perf: 0.5788, Train Loss: 0.2223, Val: 0.5525, Test: 0.5237, Seconds: 10.6556
+Epoch: 027, Train perf: 0.5819, Train Loss: 0.2218, Val: 0.5563, Test: 0.5295, Seconds: 12.6396
+Epoch: 028, Train perf: 0.5860, Train Loss: 0.2201, Val: 0.5579, Test: 0.5433, Seconds: 12.6833
+Epoch: 029, Train perf: 0.5955, Train Loss: 0.2174, Val: 0.5564, Test: 0.5433, Seconds: 10.8511
+Epoch: 030, Train perf: 0.5995, Train Loss: 0.2165, Val: 0.5778, Test: 0.5451, Seconds: 12.4061
+Epoch: 031, Train perf: 0.6035, Train Loss: 0.2147, Val: 0.5681, Test: 0.5451, Seconds: 10.6103
+Epoch: 032, Train perf: 0.6057, Train Loss: 0.2127, Val: 0.5690, Test: 0.5451, Seconds: 11.0021
+Epoch: 033, Train perf: 0.6067, Train Loss: 0.2132, Val: 0.5762, Test: 0.5451, Seconds: 10.8466
+Epoch: 034, Train perf: 0.6135, Train Loss: 0.2118, Val: 0.5783, Test: 0.5552, Seconds: 12.4926
+Epoch: 035, Train perf: 0.6227, Train Loss: 0.2087, Val: 0.5814, Test: 0.5527, Seconds: 12.4183
+Epoch: 036, Train perf: 0.6237, Train Loss: 0.2073, Val: 0.5835, Test: 0.5630, Seconds: 12.3729
+Epoch: 037, Train perf: 0.6274, Train Loss: 0.2066, Val: 0.5722, Test: 0.5630, Seconds: 10.7925
+Epoch: 038, Train perf: 0.6245, Train Loss: 0.2068, Val: 0.5942, Test: 0.5522, Seconds: 12.3463
+Epoch: 039, Train perf: 0.6322, Train Loss: 0.2036, Val: 0.5983, Test: 0.5646, Seconds: 12.4036
+Epoch: 040, Train perf: 0.6338, Train Loss: 0.2027, Val: 0.5906, Test: 0.5646, Seconds: 10.5854
+Epoch: 041, Train perf: 0.6462, Train Loss: 0.1999, Val: 0.6002, Test: 0.5705, Seconds: 12.6302
+Epoch: 042, Train perf: 0.6451, Train Loss: 0.1990, Val: 0.5862, Test: 0.5705, Seconds: 10.7338
+Epoch: 043, Train perf: 0.6510, Train Loss: 0.1976, Val: 0.5923, Test: 0.5705, Seconds: 10.6815
+Epoch: 044, Train perf: 0.6522, Train Loss: 0.1966, Val: 0.6047, Test: 0.5715, Seconds: 12.2326
+Epoch: 045, Train perf: 0.6598, Train Loss: 0.1941, Val: 0.5998, Test: 0.5715, Seconds: 10.6166
+Epoch: 046, Train perf: 0.6615, Train Loss: 0.1939, Val: 0.6008, Test: 0.5715, Seconds: 10.7332
+Epoch: 047, Train perf: 0.6685, Train Loss: 0.1916, Val: 0.6018, Test: 0.5715, Seconds: 10.7680
+Epoch: 048, Train perf: 0.6721, Train Loss: 0.1892, Val: 0.6026, Test: 0.5715, Seconds: 11.0835
+Epoch: 049, Train perf: 0.6768, Train Loss: 0.1871, Val: 0.6119, Test: 0.5813, Seconds: 12.8152
+Epoch: 050, Train perf: 0.6815, Train Loss: 0.1868, Val: 0.6141, Test: 0.5826, Seconds: 12.5721
+Epoch: 051, Train perf: 0.6888, Train Loss: 0.1843, Val: 0.6094, Test: 0.5826, Seconds: 10.6510
+Epoch: 052, Train perf: 0.6890, Train Loss: 0.1836, Val: 0.6104, Test: 0.5826, Seconds: 10.7460
+Epoch: 053, Train perf: 0.6910, Train Loss: 0.1816, Val: 0.6084, Test: 0.5826, Seconds: 10.7004
+Epoch: 054, Train perf: 0.6974, Train Loss: 0.1808, Val: 0.6191, Test: 0.5914, Seconds: 12.4261
+Epoch: 055, Train perf: 0.7016, Train Loss: 0.1782, Val: 0.6236, Test: 0.5919, Seconds: 12.3624
+Epoch: 056, Train perf: 0.7080, Train Loss: 0.1771, Val: 0.6265, Test: 0.5987, Seconds: 12.4633
+Epoch: 057, Train perf: 0.7115, Train Loss: 0.1751, Val: 0.6242, Test: 0.5987, Seconds: 10.7176
+Epoch: 058, Train perf: 0.7128, Train Loss: 0.1740, Val: 0.6181, Test: 0.5987, Seconds: 10.8089
+Epoch: 059, Train perf: 0.7183, Train Loss: 0.1725, Val: 0.6219, Test: 0.5987, Seconds: 11.1583
+Epoch: 060, Train perf: 0.7275, Train Loss: 0.1696, Val: 0.6256, Test: 0.5987, Seconds: 10.7906
+Epoch: 061, Train perf: 0.7313, Train Loss: 0.1672, Val: 0.6238, Test: 0.5987, Seconds: 10.7489
+Epoch: 062, Train perf: 0.7280, Train Loss: 0.1679, Val: 0.6272, Test: 0.5934, Seconds: 12.3415
+Epoch: 063, Train perf: 0.7333, Train Loss: 0.1666, Val: 0.6201, Test: 0.5934, Seconds: 10.5871
+Epoch: 064, Train perf: 0.7435, Train Loss: 0.1628, Val: 0.6312, Test: 0.6065, Seconds: 12.3832
+Epoch: 065, Train perf: 0.7431, Train Loss: 0.1619, Val: 0.6143, Test: 0.6065, Seconds: 10.5936
+Epoch: 066, Train perf: 0.7515, Train Loss: 0.1592, Val: 0.6171, Test: 0.6065, Seconds: 10.7227
+Epoch: 067, Train perf: 0.7548, Train Loss: 0.1581, Val: 0.6279, Test: 0.6065, Seconds: 10.6858
+Epoch: 068, Train perf: 0.7543, Train Loss: 0.1570, Val: 0.6170, Test: 0.6065, Seconds: 10.7869
+Epoch: 069, Train perf: 0.7651, Train Loss: 0.1549, Val: 0.6294, Test: 0.6065, Seconds: 11.4705
+Epoch: 070, Train perf: 0.7582, Train Loss: 0.1538, Val: 0.6246, Test: 0.6065, Seconds: 11.0796
+Epoch: 071, Train perf: 0.7666, Train Loss: 0.1517, Val: 0.6237, Test: 0.6065, Seconds: 10.8965
+Epoch: 072, Train perf: 0.7702, Train Loss: 0.1510, Val: 0.6258, Test: 0.6065, Seconds: 10.8621
+Epoch: 073, Train perf: 0.7780, Train Loss: 0.1473, Val: 0.6228, Test: 0.6065, Seconds: 10.7537
+Epoch: 074, Train perf: 0.7783, Train Loss: 0.1476, Val: 0.6216, Test: 0.6065, Seconds: 10.7663
+Epoch: 075, Train perf: 0.7825, Train Loss: 0.1448, Val: 0.6197, Test: 0.6065, Seconds: 10.7431
+Epoch: 076, Train perf: 0.7871, Train Loss: 0.1418, Val: 0.6313, Test: 0.6127, Seconds: 12.3669
+Epoch: 077, Train perf: 0.7857, Train Loss: 0.1417, Val: 0.6274, Test: 0.6127, Seconds: 10.6826
+Epoch 00078: reducing learning rate of group 0 to 5.0000e-04.
+Epoch: 078, Train perf: 0.8136, Train Loss: 0.1324, Val: 0.6338, Test: 0.6199, Seconds: 12.6502
+Epoch: 079, Train perf: 0.8233, Train Loss: 0.1279, Val: 0.6329, Test: 0.6199, Seconds: 10.7645
+Epoch: 080, Train perf: 0.8284, Train Loss: 0.1264, Val: 0.6211, Test: 0.6199, Seconds: 10.6936
+Epoch: 081, Train perf: 0.8285, Train Loss: 0.1252, Val: 0.6362, Test: 0.6216, Seconds: 12.3476
+Epoch: 082, Train perf: 0.8281, Train Loss: 0.1247, Val: 0.6314, Test: 0.6216, Seconds: 10.7002
+Epoch: 083, Train perf: 0.8324, Train Loss: 0.1237, Val: 0.6300, Test: 0.6216, Seconds: 10.6964
+Epoch: 084, Train perf: 0.8362, Train Loss: 0.1211, Val: 0.6365, Test: 0.6231, Seconds: 12.4482
+Epoch: 085, Train perf: 0.8362, Train Loss: 0.1215, Val: 0.6263, Test: 0.6231, Seconds: 10.9012
+Epoch: 086, Train perf: 0.8396, Train Loss: 0.1199, Val: 0.6376, Test: 0.6271, Seconds: 12.2269
+Epoch: 087, Train perf: 0.8410, Train Loss: 0.1188, Val: 0.6344, Test: 0.6271, Seconds: 10.7521
+Epoch: 088, Train perf: 0.8450, Train Loss: 0.1185, Val: 0.6295, Test: 0.6271, Seconds: 10.9560
+Epoch: 089, Train perf: 0.8429, Train Loss: 0.1181, Val: 0.6283, Test: 0.6271, Seconds: 10.7895
+Epoch: 090, Train perf: 0.8473, Train Loss: 0.1155, Val: 0.6403, Test: 0.6347, Seconds: 12.5296
+Epoch: 091, Train perf: 0.8525, Train Loss: 0.1144, Val: 0.6365, Test: 0.6347, Seconds: 11.0817
+Epoch: 092, Train perf: 0.8533, Train Loss: 0.1134, Val: 0.6308, Test: 0.6347, Seconds: 10.8326
+Epoch: 093, Train perf: 0.8602, Train Loss: 0.1107, Val: 0.6268, Test: 0.6347, Seconds: 10.8329
+Epoch: 094, Train perf: 0.8584, Train Loss: 0.1115, Val: 0.6308, Test: 0.6347, Seconds: 10.7705
+Epoch: 095, Train perf: 0.8631, Train Loss: 0.1101, Val: 0.6283, Test: 0.6347, Seconds: 10.7976
+Epoch: 096, Train perf: 0.8633, Train Loss: 0.1091, Val: 0.6232, Test: 0.6347, Seconds: 10.8724
+Epoch: 097, Train perf: 0.8629, Train Loss: 0.1065, Val: 0.6269, Test: 0.6347, Seconds: 10.9518
+Epoch: 098, Train perf: 0.8680, Train Loss: 0.1061, Val: 0.6183, Test: 0.6347, Seconds: 10.7281
+Epoch 00099: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 099, Train perf: 0.8818, Train Loss: 0.1003, Val: 0.6253, Test: 0.6347, Seconds: 10.5869
+Epoch: 100, Train perf: 0.8828, Train Loss: 0.0995, Val: 0.6306, Test: 0.6347, Seconds: 10.8405
+Epoch: 101, Train perf: 0.8838, Train Loss: 0.0998, Val: 0.6332, Test: 0.6347, Seconds: 10.7800
+Epoch: 102, Train perf: 0.8850, Train Loss: 0.0977, Val: 0.6314, Test: 0.6347, Seconds: 10.7688
+Epoch: 103, Train perf: 0.8900, Train Loss: 0.0964, Val: 0.6245, Test: 0.6347, Seconds: 10.8284
+Epoch: 104, Train perf: 0.8898, Train Loss: 0.0964, Val: 0.6351, Test: 0.6347, Seconds: 10.7854
+Epoch: 105, Train perf: 0.8879, Train Loss: 0.0968, Val: 0.6253, Test: 0.6347, Seconds: 10.7009
+Epoch: 106, Train perf: 0.8905, Train Loss: 0.0959, Val: 0.6334, Test: 0.6347, Seconds: 10.6205
+Epoch: 107, Train perf: 0.8940, Train Loss: 0.0947, Val: 0.6299, Test: 0.6347, Seconds: 10.7481
+Epoch: 108, Train perf: 0.8909, Train Loss: 0.0951, Val: 0.6319, Test: 0.6347, Seconds: 10.7557
+Epoch: 109, Train perf: 0.8926, Train Loss: 0.0937, Val: 0.6299, Test: 0.6347, Seconds: 10.7454
+Epoch: 110, Train perf: 0.8945, Train Loss: 0.0937, Val: 0.6282, Test: 0.6347, Seconds: 10.6399
+Epoch: 111, Train perf: 0.8952, Train Loss: 0.0926, Val: 0.6232, Test: 0.6347, Seconds: 10.7992
+Epoch: 112, Train perf: 0.8988, Train Loss: 0.0910, Val: 0.6314, Test: 0.6347, Seconds: 10.7620
+Epoch: 113, Train perf: 0.8970, Train Loss: 0.0916, Val: 0.6308, Test: 0.6347, Seconds: 11.1786
+Epoch: 114, Train perf: 0.9017, Train Loss: 0.0909, Val: 0.6308, Test: 0.6347, Seconds: 10.9160
+Epoch: 115, Train perf: 0.8995, Train Loss: 0.0902, Val: 0.6286, Test: 0.6347, Seconds: 10.8805
+Epoch: 116, Train perf: 0.9042, Train Loss: 0.0892, Val: 0.6289, Test: 0.6347, Seconds: 10.7634
+Epoch: 117, Train perf: 0.9045, Train Loss: 0.0893, Val: 0.6297, Test: 0.6347, Seconds: 10.6853
+Epoch: 118, Train perf: 0.9063, Train Loss: 0.0886, Val: 0.6286, Test: 0.6347, Seconds: 10.8069
+Epoch: 119, Train perf: 0.9011, Train Loss: 0.0897, Val: 0.6283, Test: 0.6347, Seconds: 10.7516
+Epoch 00120: reducing learning rate of group 0 to 1.2500e-04.
+Epoch: 120, Train perf: 0.9115, Train Loss: 0.0860, Val: 0.6343, Test: 0.6347, Seconds: 10.8330
+Epoch: 121, Train perf: 0.9154, Train Loss: 0.0844, Val: 0.6236, Test: 0.6347, Seconds: 10.6861
+Epoch: 122, Train perf: 0.9134, Train Loss: 0.0834, Val: 0.6342, Test: 0.6347, Seconds: 10.7505
+Epoch: 123, Train perf: 0.9144, Train Loss: 0.0837, Val: 0.6293, Test: 0.6347, Seconds: 10.8176
+Epoch: 124, Train perf: 0.9124, Train Loss: 0.0842, Val: 0.6314, Test: 0.6347, Seconds: 10.6616
+Epoch: 125, Train perf: 0.9158, Train Loss: 0.0830, Val: 0.6286, Test: 0.6347, Seconds: 11.2078
+Epoch: 126, Train perf: 0.9153, Train Loss: 0.0829, Val: 0.6267, Test: 0.6347, Seconds: 10.6950
+Epoch: 127, Train perf: 0.9173, Train Loss: 0.0824, Val: 0.6327, Test: 0.6347, Seconds: 10.7044
+Epoch: 128, Train perf: 0.9145, Train Loss: 0.0833, Val: 0.6306, Test: 0.6347, Seconds: 10.6622
+Epoch: 129, Train perf: 0.9163, Train Loss: 0.0820, Val: 0.6321, Test: 0.6347, Seconds: 10.8239
+Epoch: 130, Train perf: 0.9159, Train Loss: 0.0823, Val: 0.6270, Test: 0.6347, Seconds: 10.7638
+Epoch: 131, Train perf: 0.9157, Train Loss: 0.0818, Val: 0.6286, Test: 0.6347, Seconds: 10.6462
+Epoch: 132, Train perf: 0.9189, Train Loss: 0.0811, Val: 0.6309, Test: 0.6347, Seconds: 10.6588
+Epoch: 133, Train perf: 0.9209, Train Loss: 0.0807, Val: 0.6232, Test: 0.6347, Seconds: 10.7419
+Epoch: 134, Train perf: 0.9185, Train Loss: 0.0804, Val: 0.6305, Test: 0.6347, Seconds: 10.8190
+Epoch: 135, Train perf: 0.9220, Train Loss: 0.0800, Val: 0.6270, Test: 0.6347, Seconds: 10.8957
+Epoch: 136, Train perf: 0.9167, Train Loss: 0.0812, Val: 0.6282, Test: 0.6347, Seconds: 11.5887
+Epoch: 137, Train perf: 0.9215, Train Loss: 0.0800, Val: 0.6290, Test: 0.6347, Seconds: 10.9603
+Epoch: 138, Train perf: 0.9230, Train Loss: 0.0782, Val: 0.6288, Test: 0.6347, Seconds: 10.8151
+Epoch: 139, Train perf: 0.9194, Train Loss: 0.0796, Val: 0.6240, Test: 0.6347, Seconds: 10.5672
+Epoch: 140, Train perf: 0.9227, Train Loss: 0.0788, Val: 0.6305, Test: 0.6347, Seconds: 10.8314
+Epoch 00141: reducing learning rate of group 0 to 6.2500e-05.
+Epoch: 141, Train perf: 0.9246, Train Loss: 0.0776, Val: 0.6336, Test: 0.6347, Seconds: 10.7549
+Epoch: 142, Train perf: 0.9266, Train Loss: 0.0772, Val: 0.6283, Test: 0.6347, Seconds: 10.7365
+Epoch: 143, Train perf: 0.9248, Train Loss: 0.0777, Val: 0.6264, Test: 0.6347, Seconds: 10.6507
+Epoch: 144, Train perf: 0.9255, Train Loss: 0.0762, Val: 0.6316, Test: 0.6347, Seconds: 10.7060
+Epoch: 145, Train perf: 0.9265, Train Loss: 0.0766, Val: 0.6288, Test: 0.6347, Seconds: 10.8766
+Epoch: 146, Train perf: 0.9297, Train Loss: 0.0758, Val: 0.6289, Test: 0.6347, Seconds: 10.7381
+Epoch: 147, Train perf: 0.9271, Train Loss: 0.0766, Val: 0.6287, Test: 0.6347, Seconds: 10.7798
+Epoch: 148, Train perf: 0.9273, Train Loss: 0.0761, Val: 0.6265, Test: 0.6347, Seconds: 10.6927
+Epoch: 149, Train perf: 0.9277, Train Loss: 0.0761, Val: 0.6287, Test: 0.6347, Seconds: 10.5519
+Epoch: 150, Train perf: 0.9259, Train Loss: 0.0765, Val: 0.6286, Test: 0.6347, Seconds: 10.6611
+Epoch: 151, Train perf: 0.9272, Train Loss: 0.0756, Val: 0.6302, Test: 0.6347, Seconds: 10.8334
+Epoch: 152, Train perf: 0.9294, Train Loss: 0.0756, Val: 0.6299, Test: 0.6347, Seconds: 10.7001
+Epoch: 153, Train perf: 0.9256, Train Loss: 0.0757, Val: 0.6256, Test: 0.6347, Seconds: 10.6775
+Epoch: 154, Train perf: 0.9290, Train Loss: 0.0753, Val: 0.6232, Test: 0.6347, Seconds: 10.8547
+Epoch: 155, Train perf: 0.9263, Train Loss: 0.0755, Val: 0.6281, Test: 0.6347, Seconds: 10.8225
+Epoch: 156, Train perf: 0.9301, Train Loss: 0.0755, Val: 0.6263, Test: 0.6347, Seconds: 10.6615
+Epoch: 157, Train perf: 0.9303, Train Loss: 0.0748, Val: 0.6198, Test: 0.6347, Seconds: 10.6219
+Epoch: 158, Train perf: 0.9305, Train Loss: 0.0740, Val: 0.6288, Test: 0.6347, Seconds: 11.0551
+Epoch: 159, Train perf: 0.9313, Train Loss: 0.0744, Val: 0.6275, Test: 0.6347, Seconds: 10.9225
+Epoch: 160, Train perf: 0.9282, Train Loss: 0.0752, Val: 0.6266, Test: 0.6347, Seconds: 10.7935
+Epoch: 161, Train perf: 0.9295, Train Loss: 0.0750, Val: 0.6270, Test: 0.6347, Seconds: 10.5223
+Epoch 00162: reducing learning rate of group 0 to 3.1250e-05.
+Epoch: 162, Train perf: 0.9296, Train Loss: 0.0737, Val: 0.6271, Test: 0.6347, Seconds: 10.6745
+Epoch: 163, Train perf: 0.9304, Train Loss: 0.0727, Val: 0.6261, Test: 0.6347, Seconds: 10.8173
+Epoch: 164, Train perf: 0.9313, Train Loss: 0.0734, Val: 0.6296, Test: 0.6347, Seconds: 10.6169
+Epoch: 165, Train perf: 0.9322, Train Loss: 0.0727, Val: 0.6263, Test: 0.6347, Seconds: 10.5452
+Epoch: 166, Train perf: 0.9285, Train Loss: 0.0744, Val: 0.6247, Test: 0.6347, Seconds: 10.5425
+Epoch: 167, Train perf: 0.9332, Train Loss: 0.0731, Val: 0.6262, Test: 0.6347, Seconds: 10.5544
+Epoch: 168, Train perf: 0.9336, Train Loss: 0.0726, Val: 0.6260, Test: 0.6347, Seconds: 10.6315
+Epoch: 169, Train perf: 0.9334, Train Loss: 0.0733, Val: 0.6307, Test: 0.6347, Seconds: 10.6230
+Epoch: 170, Train perf: 0.9312, Train Loss: 0.0732, Val: 0.6306, Test: 0.6347, Seconds: 10.5122
+Epoch: 171, Train perf: 0.9339, Train Loss: 0.0725, Val: 0.6292, Test: 0.6347, Seconds: 10.5864
+Epoch: 172, Train perf: 0.9312, Train Loss: 0.0728, Val: 0.6312, Test: 0.6347, Seconds: 10.6131
+Epoch: 173, Train perf: 0.9328, Train Loss: 0.0728, Val: 0.6266, Test: 0.6347, Seconds: 10.6678
+Epoch: 174, Train perf: 0.9335, Train Loss: 0.0730, Val: 0.6307, Test: 0.6347, Seconds: 10.9506
+Epoch: 175, Train perf: 0.9326, Train Loss: 0.0722, Val: 0.6316, Test: 0.6347, Seconds: 10.5792
+Epoch: 176, Train perf: 0.9309, Train Loss: 0.0728, Val: 0.6234, Test: 0.6347, Seconds: 10.5885
+Epoch: 177, Train perf: 0.9341, Train Loss: 0.0721, Val: 0.6342, Test: 0.6347, Seconds: 10.6650
+Epoch: 178, Train perf: 0.9358, Train Loss: 0.0721, Val: 0.6232, Test: 0.6347, Seconds: 10.5312
+Epoch: 179, Train perf: 0.9367, Train Loss: 0.0719, Val: 0.6269, Test: 0.6347, Seconds: 10.6029
+Epoch: 180, Train perf: 0.9347, Train Loss: 0.0725, Val: 0.6273, Test: 0.6347, Seconds: 10.4269
+Epoch: 181, Train perf: 0.9337, Train Loss: 0.0729, Val: 0.6277, Test: 0.6347, Seconds: 11.0804
+Epoch: 182, Train perf: 0.9353, Train Loss: 0.0718, Val: 0.6248, Test: 0.6347, Seconds: 11.0411
+Epoch 00183: reducing learning rate of group 0 to 1.5625e-05.
+Epoch: 183, Train perf: 0.9358, Train Loss: 0.0728, Val: 0.6211, Test: 0.6347, Seconds: 11.0438
+Epoch: 184, Train perf: 0.9320, Train Loss: 0.0722, Val: 0.6333, Test: 0.6347, Seconds: 10.6059
+Epoch: 185, Train perf: 0.9353, Train Loss: 0.0713, Val: 0.6252, Test: 0.6347, Seconds: 10.7181
+Epoch: 186, Train perf: 0.9337, Train Loss: 0.0714, Val: 0.6231, Test: 0.6347, Seconds: 10.7747
+Epoch: 187, Train perf: 0.9331, Train Loss: 0.0720, Val: 0.6271, Test: 0.6347, Seconds: 10.6458
+Epoch: 188, Train perf: 0.9329, Train Loss: 0.0728, Val: 0.6245, Test: 0.6347, Seconds: 10.5203
+Epoch: 189, Train perf: 0.9362, Train Loss: 0.0713, Val: 0.6319, Test: 0.6347, Seconds: 10.6003
+Epoch: 190, Train perf: 0.9348, Train Loss: 0.0719, Val: 0.6233, Test: 0.6347, Seconds: 10.4678
+Epoch: 191, Train perf: 0.9362, Train Loss: 0.0709, Val: 0.6310, Test: 0.6347, Seconds: 10.6249
+Epoch: 192, Train perf: 0.9351, Train Loss: 0.0716, Val: 0.6325, Test: 0.6347, Seconds: 10.7158
+Epoch: 193, Train perf: 0.9349, Train Loss: 0.0722, Val: 0.6269, Test: 0.6347, Seconds: 10.8808
+Epoch: 194, Train perf: 0.9346, Train Loss: 0.0717, Val: 0.6242, Test: 0.6347, Seconds: 10.8524
+Epoch: 195, Train perf: 0.9365, Train Loss: 0.0702, Val: 0.6274, Test: 0.6347, Seconds: 10.8894
+Epoch: 196, Train perf: 0.9382, Train Loss: 0.0702, Val: 0.6301, Test: 0.6347, Seconds: 10.7577
+Epoch: 197, Train perf: 0.9363, Train Loss: 0.0718, Val: 0.6288, Test: 0.6347, Seconds: 10.5700
+Epoch: 198, Train perf: 0.9361, Train Loss: 0.0714, Val: 0.6280, Test: 0.6347, Seconds: 10.5057
+Epoch: 199, Train perf: 0.9377, Train Loss: 0.0706, Val: 0.6296, Test: 0.6347, Seconds: 10.8238
+
+Run:  2
+Train Loss: 0.0706
+Train Accuracy: 0.9377
+Vali Accuracy: 0.6403
+Test Accuracy: 0.6347
+Convergence Time (Epochs): 200
+AVG TIME PER EPOCH: 11.1312 s
+TOTAL TIME TAKEN: 0.6184 h
+
+----------SEED ---------: 58
+
+
+Number of parameters: 346206
+Epoch: 000, Train perf: 0.2716, Train Loss: 0.4067, Val: 0.3377, Test: 0.3384, Seconds: 12.2343
+Epoch: 001, Train perf: 0.3562, Train Loss: 0.3028, Val: 0.3708, Test: 0.3726, Seconds: 12.1623
+Epoch: 002, Train perf: 0.3879, Train Loss: 0.2893, Val: 0.4065, Test: 0.3943, Seconds: 12.3205
+Epoch: 003, Train perf: 0.4046, Train Loss: 0.2823, Val: 0.4092, Test: 0.4019, Seconds: 13.2650
+Epoch: 004, Train perf: 0.4212, Train Loss: 0.2773, Val: 0.4337, Test: 0.4212, Seconds: 12.7985
+Epoch: 005, Train perf: 0.4313, Train Loss: 0.2727, Val: 0.4444, Test: 0.4266, Seconds: 12.2341
+Epoch: 006, Train perf: 0.4377, Train Loss: 0.2694, Val: 0.4552, Test: 0.4326, Seconds: 12.3995
+Epoch: 007, Train perf: 0.4501, Train Loss: 0.2645, Val: 0.4629, Test: 0.4378, Seconds: 12.3287
+Epoch: 008, Train perf: 0.4632, Train Loss: 0.2612, Val: 0.4679, Test: 0.4539, Seconds: 12.2586
+Epoch: 009, Train perf: 0.4644, Train Loss: 0.2590, Val: 0.4720, Test: 0.4471, Seconds: 12.5269
+Epoch: 010, Train perf: 0.4777, Train Loss: 0.2554, Val: 0.4792, Test: 0.4630, Seconds: 12.4342
+Epoch: 011, Train perf: 0.4862, Train Loss: 0.2525, Val: 0.4858, Test: 0.4589, Seconds: 12.3798
+Epoch: 012, Train perf: 0.4962, Train Loss: 0.2500, Val: 0.4968, Test: 0.4768, Seconds: 12.1913
+Epoch: 013, Train perf: 0.5008, Train Loss: 0.2475, Val: 0.5068, Test: 0.4818, Seconds: 12.3109
+Epoch: 014, Train perf: 0.5104, Train Loss: 0.2445, Val: 0.5038, Test: 0.4818, Seconds: 10.6738
+Epoch: 015, Train perf: 0.5139, Train Loss: 0.2420, Val: 0.5129, Test: 0.4838, Seconds: 12.3977
+Epoch: 016, Train perf: 0.5277, Train Loss: 0.2399, Val: 0.5237, Test: 0.4945, Seconds: 12.0766
+Epoch: 017, Train perf: 0.5337, Train Loss: 0.2375, Val: 0.5255, Test: 0.4984, Seconds: 12.2866
+Epoch: 018, Train perf: 0.5378, Train Loss: 0.2361, Val: 0.5141, Test: 0.4984, Seconds: 10.6119
+Epoch: 019, Train perf: 0.5387, Train Loss: 0.2339, Val: 0.5322, Test: 0.5065, Seconds: 12.4258
+Epoch: 020, Train perf: 0.5438, Train Loss: 0.2314, Val: 0.5351, Test: 0.5109, Seconds: 12.0667
+Epoch: 021, Train perf: 0.5500, Train Loss: 0.2315, Val: 0.5367, Test: 0.5187, Seconds: 11.9712
+Epoch: 022, Train perf: 0.5582, Train Loss: 0.2297, Val: 0.5498, Test: 0.5137, Seconds: 12.1001
+Epoch: 023, Train perf: 0.5628, Train Loss: 0.2269, Val: 0.5480, Test: 0.5137, Seconds: 10.8771
+Epoch: 024, Train perf: 0.5719, Train Loss: 0.2248, Val: 0.5500, Test: 0.5200, Seconds: 12.1969
+Epoch: 025, Train perf: 0.5745, Train Loss: 0.2235, Val: 0.5490, Test: 0.5200, Seconds: 10.6058
+Epoch: 026, Train perf: 0.5772, Train Loss: 0.2223, Val: 0.5510, Test: 0.5204, Seconds: 12.1185
+Epoch: 027, Train perf: 0.5823, Train Loss: 0.2207, Val: 0.5627, Test: 0.5311, Seconds: 12.0944
+Epoch: 028, Train perf: 0.5849, Train Loss: 0.2197, Val: 0.5533, Test: 0.5311, Seconds: 10.4191
+Epoch: 029, Train perf: 0.5927, Train Loss: 0.2171, Val: 0.5707, Test: 0.5379, Seconds: 12.0465
+Epoch: 030, Train perf: 0.5980, Train Loss: 0.2157, Val: 0.5653, Test: 0.5379, Seconds: 10.3483
+Epoch: 031, Train perf: 0.6018, Train Loss: 0.2136, Val: 0.5748, Test: 0.5418, Seconds: 12.0035
+Epoch: 032, Train perf: 0.5988, Train Loss: 0.2140, Val: 0.5612, Test: 0.5418, Seconds: 9.3529
+Epoch: 033, Train perf: 0.6064, Train Loss: 0.2121, Val: 0.5827, Test: 0.5414, Seconds: 12.4441
+Epoch: 034, Train perf: 0.6143, Train Loss: 0.2092, Val: 0.5784, Test: 0.5414, Seconds: 10.7085
+Epoch: 035, Train perf: 0.6123, Train Loss: 0.2090, Val: 0.5817, Test: 0.5414, Seconds: 10.7094
+Epoch: 036, Train perf: 0.6230, Train Loss: 0.2063, Val: 0.5845, Test: 0.5492, Seconds: 12.5113
+Epoch: 037, Train perf: 0.6229, Train Loss: 0.2058, Val: 0.5881, Test: 0.5536, Seconds: 12.4952
+Epoch: 038, Train perf: 0.6265, Train Loss: 0.2043, Val: 0.5848, Test: 0.5536, Seconds: 10.6959
+Epoch: 039, Train perf: 0.6293, Train Loss: 0.2035, Val: 0.5923, Test: 0.5474, Seconds: 12.4703
+Epoch: 040, Train perf: 0.6367, Train Loss: 0.2023, Val: 0.5994, Test: 0.5688, Seconds: 12.3151
+Epoch: 041, Train perf: 0.6395, Train Loss: 0.1995, Val: 0.6029, Test: 0.5589, Seconds: 12.3374
+Epoch: 042, Train perf: 0.6462, Train Loss: 0.1990, Val: 0.5906, Test: 0.5589, Seconds: 10.6690
+Epoch: 043, Train perf: 0.6487, Train Loss: 0.1968, Val: 0.6021, Test: 0.5589, Seconds: 10.7332
+Epoch: 044, Train perf: 0.6573, Train Loss: 0.1957, Val: 0.5864, Test: 0.5589, Seconds: 10.7312
+Epoch: 045, Train perf: 0.6523, Train Loss: 0.1947, Val: 0.6130, Test: 0.5707, Seconds: 12.8830
+Epoch: 046, Train perf: 0.6623, Train Loss: 0.1928, Val: 0.5949, Test: 0.5707, Seconds: 10.8511
+Epoch: 047, Train perf: 0.6658, Train Loss: 0.1914, Val: 0.6014, Test: 0.5707, Seconds: 10.7082
+Epoch: 048, Train perf: 0.6730, Train Loss: 0.1887, Val: 0.6053, Test: 0.5707, Seconds: 10.6933
+Epoch: 049, Train perf: 0.6744, Train Loss: 0.1871, Val: 0.6067, Test: 0.5707, Seconds: 10.7094
+Epoch: 050, Train perf: 0.6819, Train Loss: 0.1858, Val: 0.6028, Test: 0.5707, Seconds: 10.8549
+Epoch: 051, Train perf: 0.6862, Train Loss: 0.1845, Val: 0.6106, Test: 0.5707, Seconds: 10.8238
+Epoch: 052, Train perf: 0.6841, Train Loss: 0.1837, Val: 0.6141, Test: 0.5737, Seconds: 12.6418
+Epoch: 053, Train perf: 0.6936, Train Loss: 0.1811, Val: 0.6191, Test: 0.5782, Seconds: 12.5744
+Epoch: 054, Train perf: 0.6981, Train Loss: 0.1798, Val: 0.5995, Test: 0.5782, Seconds: 11.1156
+Epoch: 055, Train perf: 0.6961, Train Loss: 0.1794, Val: 0.6258, Test: 0.5781, Seconds: 12.4777
+Epoch: 056, Train perf: 0.7086, Train Loss: 0.1756, Val: 0.6160, Test: 0.5781, Seconds: 10.8402
+Epoch: 057, Train perf: 0.7073, Train Loss: 0.1753, Val: 0.6107, Test: 0.5781, Seconds: 10.6386
+Epoch: 058, Train perf: 0.7147, Train Loss: 0.1734, Val: 0.6176, Test: 0.5781, Seconds: 10.4962
+Epoch: 059, Train perf: 0.7223, Train Loss: 0.1700, Val: 0.6143, Test: 0.5781, Seconds: 10.7229
+Epoch: 060, Train perf: 0.7221, Train Loss: 0.1694, Val: 0.6217, Test: 0.5781, Seconds: 10.6531
+Epoch: 061, Train perf: 0.7228, Train Loss: 0.1689, Val: 0.6158, Test: 0.5781, Seconds: 10.7206
+Epoch: 062, Train perf: 0.7280, Train Loss: 0.1660, Val: 0.6162, Test: 0.5781, Seconds: 10.7716
+Epoch: 063, Train perf: 0.7321, Train Loss: 0.1649, Val: 0.6198, Test: 0.5781, Seconds: 10.6385
+Epoch: 064, Train perf: 0.7384, Train Loss: 0.1644, Val: 0.6159, Test: 0.5781, Seconds: 10.7822
+Epoch: 065, Train perf: 0.7393, Train Loss: 0.1618, Val: 0.6147, Test: 0.5781, Seconds: 10.6715
+Epoch: 066, Train perf: 0.7443, Train Loss: 0.1593, Val: 0.6134, Test: 0.5781, Seconds: 10.7077
+Epoch: 067, Train perf: 0.7499, Train Loss: 0.1590, Val: 0.6216, Test: 0.5781, Seconds: 10.7914
+Epoch: 068, Train perf: 0.7592, Train Loss: 0.1552, Val: 0.6259, Test: 0.5961, Seconds: 12.9327
+Epoch: 069, Train perf: 0.7617, Train Loss: 0.1536, Val: 0.6155, Test: 0.5961, Seconds: 10.8479
+Epoch: 070, Train perf: 0.7629, Train Loss: 0.1529, Val: 0.6248, Test: 0.5961, Seconds: 10.7667
+Epoch: 071, Train perf: 0.7647, Train Loss: 0.1515, Val: 0.6147, Test: 0.5961, Seconds: 10.8507
+Epoch: 072, Train perf: 0.7749, Train Loss: 0.1481, Val: 0.6090, Test: 0.5961, Seconds: 10.9096
+Epoch: 073, Train perf: 0.7823, Train Loss: 0.1464, Val: 0.6247, Test: 0.5961, Seconds: 10.7852
+Epoch: 074, Train perf: 0.7846, Train Loss: 0.1433, Val: 0.6079, Test: 0.5961, Seconds: 10.6839
+Epoch: 075, Train perf: 0.7891, Train Loss: 0.1427, Val: 0.6227, Test: 0.5961, Seconds: 10.7315
+Epoch: 076, Train perf: 0.7894, Train Loss: 0.1416, Val: 0.6234, Test: 0.5961, Seconds: 10.7419
+Epoch 00077: reducing learning rate of group 0 to 5.0000e-04.
+Epoch: 077, Train perf: 0.8166, Train Loss: 0.1315, Val: 0.6316, Test: 0.6126, Seconds: 12.4805
+Epoch: 078, Train perf: 0.8230, Train Loss: 0.1284, Val: 0.6282, Test: 0.6126, Seconds: 10.6972
+Epoch: 079, Train perf: 0.8215, Train Loss: 0.1268, Val: 0.6240, Test: 0.6126, Seconds: 10.8408
+Epoch: 080, Train perf: 0.8250, Train Loss: 0.1261, Val: 0.6327, Test: 0.6069, Seconds: 12.4695
+Epoch: 081, Train perf: 0.8269, Train Loss: 0.1252, Val: 0.6289, Test: 0.6069, Seconds: 10.7961
+Epoch: 082, Train perf: 0.8311, Train Loss: 0.1239, Val: 0.6281, Test: 0.6069, Seconds: 10.9140
+Epoch: 083, Train perf: 0.8334, Train Loss: 0.1220, Val: 0.6175, Test: 0.6069, Seconds: 10.7429
+Epoch: 084, Train perf: 0.8395, Train Loss: 0.1202, Val: 0.6301, Test: 0.6069, Seconds: 10.8730
+Epoch: 085, Train perf: 0.8375, Train Loss: 0.1197, Val: 0.6246, Test: 0.6069, Seconds: 10.7803
+Epoch: 086, Train perf: 0.8431, Train Loss: 0.1172, Val: 0.6178, Test: 0.6069, Seconds: 10.7529
+Epoch: 087, Train perf: 0.8443, Train Loss: 0.1170, Val: 0.6213, Test: 0.6069, Seconds: 10.7846
+Epoch: 088, Train perf: 0.8469, Train Loss: 0.1161, Val: 0.6224, Test: 0.6069, Seconds: 10.7874
+Epoch: 089, Train perf: 0.8448, Train Loss: 0.1166, Val: 0.6217, Test: 0.6069, Seconds: 10.5028
+Epoch: 090, Train perf: 0.8523, Train Loss: 0.1136, Val: 0.6146, Test: 0.6069, Seconds: 10.8844
+Epoch: 091, Train perf: 0.8538, Train Loss: 0.1117, Val: 0.6239, Test: 0.6069, Seconds: 11.3323
+Epoch: 092, Train perf: 0.8527, Train Loss: 0.1110, Val: 0.6252, Test: 0.6069, Seconds: 10.7403
+Epoch: 093, Train perf: 0.8593, Train Loss: 0.1096, Val: 0.6273, Test: 0.6069, Seconds: 10.8444
+Epoch: 094, Train perf: 0.8604, Train Loss: 0.1087, Val: 0.6305, Test: 0.6069, Seconds: 10.6351
+Epoch: 095, Train perf: 0.8621, Train Loss: 0.1082, Val: 0.6216, Test: 0.6069, Seconds: 10.9297
+Epoch: 096, Train perf: 0.8639, Train Loss: 0.1079, Val: 0.6210, Test: 0.6069, Seconds: 10.6951
+Epoch: 097, Train perf: 0.8672, Train Loss: 0.1056, Val: 0.6222, Test: 0.6069, Seconds: 10.8421
+Epoch 00098: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 098, Train perf: 0.8807, Train Loss: 0.1006, Val: 0.6264, Test: 0.6069, Seconds: 10.8262
+Epoch: 099, Train perf: 0.8833, Train Loss: 0.0989, Val: 0.6269, Test: 0.6069, Seconds: 10.6808
+Epoch: 100, Train perf: 0.8850, Train Loss: 0.0971, Val: 0.6184, Test: 0.6069, Seconds: 10.8239
+Epoch: 101, Train perf: 0.8845, Train Loss: 0.0972, Val: 0.6284, Test: 0.6069, Seconds: 10.5972
+Epoch: 102, Train perf: 0.8861, Train Loss: 0.0964, Val: 0.6282, Test: 0.6069, Seconds: 11.0300
+Epoch: 103, Train perf: 0.8893, Train Loss: 0.0958, Val: 0.6240, Test: 0.6069, Seconds: 10.7749
+Epoch: 104, Train perf: 0.8907, Train Loss: 0.0952, Val: 0.6217, Test: 0.6069, Seconds: 10.8199
+Epoch: 105, Train perf: 0.8880, Train Loss: 0.0957, Val: 0.6223, Test: 0.6069, Seconds: 10.8318
+Epoch: 106, Train perf: 0.8959, Train Loss: 0.0929, Val: 0.6201, Test: 0.6069, Seconds: 10.7081
+Epoch: 107, Train perf: 0.8923, Train Loss: 0.0937, Val: 0.6246, Test: 0.6069, Seconds: 10.8163
+Epoch: 108, Train perf: 0.8958, Train Loss: 0.0935, Val: 0.6280, Test: 0.6069, Seconds: 10.6802
+Epoch: 109, Train perf: 0.8965, Train Loss: 0.0927, Val: 0.6208, Test: 0.6069, Seconds: 10.5889
+Epoch: 110, Train perf: 0.8974, Train Loss: 0.0914, Val: 0.6246, Test: 0.6069, Seconds: 11.1489
+Epoch: 111, Train perf: 0.8982, Train Loss: 0.0907, Val: 0.6213, Test: 0.6069, Seconds: 10.7235
+Epoch: 112, Train perf: 0.8964, Train Loss: 0.0905, Val: 0.6225, Test: 0.6069, Seconds: 10.5660
+Epoch: 113, Train perf: 0.9022, Train Loss: 0.0899, Val: 0.6245, Test: 0.6069, Seconds: 10.7367
+Epoch: 114, Train perf: 0.9009, Train Loss: 0.0901, Val: 0.6205, Test: 0.6069, Seconds: 11.2404
+Epoch: 115, Train perf: 0.8986, Train Loss: 0.0892, Val: 0.6242, Test: 0.6069, Seconds: 11.2016
+Epoch: 116, Train perf: 0.9018, Train Loss: 0.0885, Val: 0.6145, Test: 0.6069, Seconds: 10.8552
+Epoch: 117, Train perf: 0.9057, Train Loss: 0.0875, Val: 0.6168, Test: 0.6069, Seconds: 11.0141
+Epoch: 118, Train perf: 0.9068, Train Loss: 0.0861, Val: 0.6269, Test: 0.6069, Seconds: 11.1078
+Epoch 00119: reducing learning rate of group 0 to 1.2500e-04.
+Epoch: 119, Train perf: 0.9115, Train Loss: 0.0840, Val: 0.6258, Test: 0.6069, Seconds: 10.7689
+Epoch: 120, Train perf: 0.9142, Train Loss: 0.0821, Val: 0.6232, Test: 0.6069, Seconds: 10.6432
+Epoch: 121, Train perf: 0.9124, Train Loss: 0.0824, Val: 0.6186, Test: 0.6069, Seconds: 10.7062
+Epoch: 122, Train perf: 0.9111, Train Loss: 0.0833, Val: 0.6288, Test: 0.6069, Seconds: 10.6567
+Epoch: 123, Train perf: 0.9107, Train Loss: 0.0831, Val: 0.6290, Test: 0.6069, Seconds: 10.6928
+Epoch: 124, Train perf: 0.9141, Train Loss: 0.0823, Val: 0.6256, Test: 0.6069, Seconds: 10.6960
+Epoch: 125, Train perf: 0.9150, Train Loss: 0.0815, Val: 0.6268, Test: 0.6069, Seconds: 10.8298
+Epoch: 126, Train perf: 0.9178, Train Loss: 0.0820, Val: 0.6172, Test: 0.6069, Seconds: 10.7631
+Epoch: 127, Train perf: 0.9154, Train Loss: 0.0811, Val: 0.6247, Test: 0.6069, Seconds: 10.6822
+Epoch: 128, Train perf: 0.9190, Train Loss: 0.0806, Val: 0.6282, Test: 0.6069, Seconds: 10.7473
+Epoch: 129, Train perf: 0.9187, Train Loss: 0.0816, Val: 0.6295, Test: 0.6069, Seconds: 11.1118
+Epoch: 130, Train perf: 0.9180, Train Loss: 0.0800, Val: 0.6268, Test: 0.6069, Seconds: 10.7653
+Epoch: 131, Train perf: 0.9168, Train Loss: 0.0805, Val: 0.6300, Test: 0.6069, Seconds: 10.6699
+Epoch: 132, Train perf: 0.9169, Train Loss: 0.0805, Val: 0.6256, Test: 0.6069, Seconds: 10.7096
+Epoch: 133, Train perf: 0.9200, Train Loss: 0.0792, Val: 0.6214, Test: 0.6069, Seconds: 10.7760
+Epoch: 134, Train perf: 0.9216, Train Loss: 0.0787, Val: 0.6203, Test: 0.6069, Seconds: 10.6303
+Epoch: 135, Train perf: 0.9213, Train Loss: 0.0791, Val: 0.6193, Test: 0.6069, Seconds: 10.7787
+Epoch: 136, Train perf: 0.9175, Train Loss: 0.0798, Val: 0.6242, Test: 0.6069, Seconds: 11.0074
+Epoch: 137, Train perf: 0.9201, Train Loss: 0.0792, Val: 0.6205, Test: 0.6069, Seconds: 10.7226
+Epoch: 138, Train perf: 0.9221, Train Loss: 0.0781, Val: 0.6259, Test: 0.6069, Seconds: 11.1247
+Epoch: 139, Train perf: 0.9214, Train Loss: 0.0782, Val: 0.6231, Test: 0.6069, Seconds: 10.8175
+Epoch 00140: reducing learning rate of group 0 to 6.2500e-05.
+Epoch: 140, Train perf: 0.9230, Train Loss: 0.0771, Val: 0.6247, Test: 0.6069, Seconds: 10.7159
+Epoch: 141, Train perf: 0.9250, Train Loss: 0.0761, Val: 0.6202, Test: 0.6069, Seconds: 10.8132
+Epoch: 142, Train perf: 0.9249, Train Loss: 0.0764, Val: 0.6253, Test: 0.6069, Seconds: 10.9377
+Epoch: 143, Train perf: 0.9269, Train Loss: 0.0755, Val: 0.6251, Test: 0.6069, Seconds: 10.6932
+Epoch: 144, Train perf: 0.9249, Train Loss: 0.0757, Val: 0.6240, Test: 0.6069, Seconds: 10.7555
+Epoch: 145, Train perf: 0.9259, Train Loss: 0.0760, Val: 0.6241, Test: 0.6069, Seconds: 10.6925
+Epoch: 146, Train perf: 0.9267, Train Loss: 0.0759, Val: 0.6196, Test: 0.6069, Seconds: 10.6595
+Epoch: 147, Train perf: 0.9291, Train Loss: 0.0750, Val: 0.6253, Test: 0.6069, Seconds: 10.9548
+Epoch: 148, Train perf: 0.9256, Train Loss: 0.0753, Val: 0.6197, Test: 0.6069, Seconds: 11.0238
+Epoch: 149, Train perf: 0.9271, Train Loss: 0.0748, Val: 0.6250, Test: 0.6069, Seconds: 10.8565
+Epoch: 150, Train perf: 0.9267, Train Loss: 0.0754, Val: 0.6236, Test: 0.6069, Seconds: 10.7189
+Epoch: 151, Train perf: 0.9322, Train Loss: 0.0738, Val: 0.6218, Test: 0.6069, Seconds: 10.6736
+Epoch: 152, Train perf: 0.9275, Train Loss: 0.0754, Val: 0.6198, Test: 0.6069, Seconds: 10.7282
+Epoch: 153, Train perf: 0.9285, Train Loss: 0.0746, Val: 0.6196, Test: 0.6069, Seconds: 10.6804
+Epoch: 154, Train perf: 0.9288, Train Loss: 0.0751, Val: 0.6175, Test: 0.6069, Seconds: 10.7816
+Epoch: 155, Train perf: 0.9304, Train Loss: 0.0742, Val: 0.6276, Test: 0.6069, Seconds: 10.7860
+Epoch: 156, Train perf: 0.9272, Train Loss: 0.0743, Val: 0.6262, Test: 0.6069, Seconds: 10.6904
+Epoch: 157, Train perf: 0.9288, Train Loss: 0.0739, Val: 0.6208, Test: 0.6069, Seconds: 10.8728
+Epoch: 158, Train perf: 0.9286, Train Loss: 0.0738, Val: 0.6213, Test: 0.6069, Seconds: 10.9038
+Epoch: 159, Train perf: 0.9296, Train Loss: 0.0733, Val: 0.6234, Test: 0.6069, Seconds: 11.1259
+Epoch: 160, Train perf: 0.9296, Train Loss: 0.0737, Val: 0.6184, Test: 0.6069, Seconds: 10.9294
+Epoch 00161: reducing learning rate of group 0 to 3.1250e-05.
+Epoch: 161, Train perf: 0.9322, Train Loss: 0.0728, Val: 0.6180, Test: 0.6069, Seconds: 10.8005
+Epoch: 162, Train perf: 0.9324, Train Loss: 0.0730, Val: 0.6176, Test: 0.6069, Seconds: 10.5847
+Epoch: 163, Train perf: 0.9320, Train Loss: 0.0721, Val: 0.6187, Test: 0.6069, Seconds: 10.5524
+Epoch: 164, Train perf: 0.9334, Train Loss: 0.0720, Val: 0.6235, Test: 0.6069, Seconds: 10.7836
+Epoch: 165, Train perf: 0.9349, Train Loss: 0.0732, Val: 0.6240, Test: 0.6069, Seconds: 10.7123
+Epoch: 166, Train perf: 0.9362, Train Loss: 0.0709, Val: 0.6158, Test: 0.6069, Seconds: 10.9317
+Epoch: 167, Train perf: 0.9345, Train Loss: 0.0725, Val: 0.6295, Test: 0.6069, Seconds: 10.8140
+Epoch: 168, Train perf: 0.9349, Train Loss: 0.0713, Val: 0.6244, Test: 0.6069, Seconds: 10.7541
+Epoch: 169, Train perf: 0.9305, Train Loss: 0.0731, Val: 0.6198, Test: 0.6069, Seconds: 10.7265
+Epoch: 170, Train perf: 0.9320, Train Loss: 0.0720, Val: 0.6241, Test: 0.6069, Seconds: 10.7418
+Epoch: 171, Train perf: 0.9318, Train Loss: 0.0723, Val: 0.6225, Test: 0.6069, Seconds: 10.6024
+Epoch: 172, Train perf: 0.9322, Train Loss: 0.0718, Val: 0.6180, Test: 0.6069, Seconds: 10.6351
+Epoch: 173, Train perf: 0.9350, Train Loss: 0.0711, Val: 0.6230, Test: 0.6069, Seconds: 10.5660
+Epoch: 174, Train perf: 0.9349, Train Loss: 0.0717, Val: 0.6190, Test: 0.6069, Seconds: 10.5224
+Epoch: 175, Train perf: 0.9339, Train Loss: 0.0719, Val: 0.6304, Test: 0.6069, Seconds: 10.5322
+Epoch: 176, Train perf: 0.9332, Train Loss: 0.0709, Val: 0.6271, Test: 0.6069, Seconds: 10.7923
+Epoch: 177, Train perf: 0.9351, Train Loss: 0.0710, Val: 0.6153, Test: 0.6069, Seconds: 10.5175
+Epoch: 178, Train perf: 0.9330, Train Loss: 0.0715, Val: 0.6271, Test: 0.6069, Seconds: 10.5792
+Epoch: 179, Train perf: 0.9339, Train Loss: 0.0712, Val: 0.6168, Test: 0.6069, Seconds: 10.4875
+Epoch: 180, Train perf: 0.9339, Train Loss: 0.0711, Val: 0.6294, Test: 0.6069, Seconds: 10.5102
+Epoch: 181, Train perf: 0.9352, Train Loss: 0.0709, Val: 0.6205, Test: 0.6069, Seconds: 10.4781
+Epoch 00182: reducing learning rate of group 0 to 1.5625e-05.
+Epoch: 182, Train perf: 0.9384, Train Loss: 0.0705, Val: 0.6282, Test: 0.6069, Seconds: 10.9311
+Epoch: 183, Train perf: 0.9352, Train Loss: 0.0708, Val: 0.6245, Test: 0.6069, Seconds: 10.7757
+Epoch: 184, Train perf: 0.9349, Train Loss: 0.0706, Val: 0.6224, Test: 0.6069, Seconds: 10.6525
+Epoch: 185, Train perf: 0.9373, Train Loss: 0.0700, Val: 0.6217, Test: 0.6069, Seconds: 10.9538
+Epoch: 186, Train perf: 0.9344, Train Loss: 0.0707, Val: 0.6235, Test: 0.6069, Seconds: 10.7171
+Epoch: 187, Train perf: 0.9350, Train Loss: 0.0710, Val: 0.6232, Test: 0.6069, Seconds: 10.5415
+Epoch: 188, Train perf: 0.9347, Train Loss: 0.0707, Val: 0.6220, Test: 0.6069, Seconds: 10.5276
+Epoch: 189, Train perf: 0.9381, Train Loss: 0.0693, Val: 0.6231, Test: 0.6069, Seconds: 10.5517
+Epoch: 190, Train perf: 0.9361, Train Loss: 0.0696, Val: 0.6229, Test: 0.6069, Seconds: 10.3799
+Epoch: 191, Train perf: 0.9392, Train Loss: 0.0693, Val: 0.6203, Test: 0.6069, Seconds: 10.6106
+Epoch: 192, Train perf: 0.9346, Train Loss: 0.0708, Val: 0.6216, Test: 0.6069, Seconds: 10.6376
+Epoch: 193, Train perf: 0.9350, Train Loss: 0.0707, Val: 0.6226, Test: 0.6069, Seconds: 10.5666
+Epoch: 194, Train perf: 0.9362, Train Loss: 0.0698, Val: 0.6195, Test: 0.6069, Seconds: 10.5274
+Epoch: 195, Train perf: 0.9368, Train Loss: 0.0699, Val: 0.6218, Test: 0.6069, Seconds: 10.6192
+Epoch: 196, Train perf: 0.9365, Train Loss: 0.0704, Val: 0.6242, Test: 0.6069, Seconds: 10.5234
+Epoch: 197, Train perf: 0.9388, Train Loss: 0.0690, Val: 0.6195, Test: 0.6069, Seconds: 10.4248
+Epoch: 198, Train perf: 0.9373, Train Loss: 0.0694, Val: 0.6203, Test: 0.6069, Seconds: 10.5967
+Epoch: 199, Train perf: 0.9325, Train Loss: 0.0709, Val: 0.6229, Test: 0.6069, Seconds: 10.4233
+
+Run:  3
+Train Loss: 0.0709
+Train Accuracy: 0.9325
+Vali Accuracy: 0.6327
+Test Accuracy: 0.6069
+Convergence Time (Epochs): 200
+AVG TIME PER EPOCH: 11.0567 s
+TOTAL TIME TAKEN: 0.6143 h
+
+Final Train Loss: 0.0685 ± 0.0027
+Final Train: 0.9395 ± 0.0056
+Final Vali: 0.6358 ± 0.0062
+Final Test: 0.6176 ± 0.0143
+Seconds/epoch: 11.1184
+Hours/total: 0.6177

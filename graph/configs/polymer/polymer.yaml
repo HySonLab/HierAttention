@@ -1,0 +1,21 @@
+dataset: polymer
+expname: polymer-lap-final
+num_workers: 8
+model:
+  name: GraphHierAttn
+  gnn_type: GINEConv
+  nlayer_gnn: 3
+  nlayer_hierattn: 1
+  hidden_size: 128
+train:
+  batch_size: 128
+  runs: 100
+  lr_patience: 20
+  epochs: 200
+metis:
+  n_patches: 32
+pos_enc:
+  lap_dim: 16
+  rw_dim: 0
+train:
+  lr: 0.001

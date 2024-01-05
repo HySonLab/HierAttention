@@ -1,0 +1,15 @@
+dataset: coco
+expname: coco-100-seeds
+num_workers: 8
+model:
+  hidden_size: 96
+train:
+  batch_size: 128
+  runs: 4
+  lr_patience: 50
+  epochs: 200
+metis:
+  n_patches: 128
+pos_enc:
+  lap_dim: 0
+  rw_dim: 8

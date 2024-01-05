@@ -1,0 +1,17 @@
+dataset: peptides-func
+expname: peptides-func-lap-paper
+num_workers: 8
+seed: [25, 32, 65, 58]
+model:
+  hidden_size: 96
+train:
+  runs: 100
+  lr_patience: 20
+  epochs: 200
+metis:
+  n_patches: 32
+pos_enc:
+  lap_dim: 16
+  rw_dim: 0
+train:
+  lr: 0.001

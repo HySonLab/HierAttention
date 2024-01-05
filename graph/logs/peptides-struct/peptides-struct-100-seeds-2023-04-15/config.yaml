@@ -1,0 +1,16 @@
+dataset: peptides-struct
+expname: peptides-struct-100-seeds
+num_workers: 8
+model:
+  hidden_size: 96
+train:
+  runs: 100
+  lr_patience: 20
+  epochs: 200
+metis:
+  n_patches: 32
+pos_enc:
+  lap_dim: 0
+  rw_dim: 16
+train:
+  lr: 0.001
