@@ -1,6 +1,6 @@
 # Scalable Hierarchical Self-Attention with Learnable Hierarchy for Long-Range Interactions
 
-Published at Transactions on Machine Learning Research (TMLR)
+Published at Transactions on Machine Learning Research (TMLR): https://openreview.net/pdf?id=qH4YFMyhce
 
 ## Project directory structure
 The details of command to run the code are provided in sub-folders:
