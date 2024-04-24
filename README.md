@@ -24,3 +24,19 @@ conda install pytorch=1.11 cudatoolkit=11.3 -c pytorch
 
 conda install pyg=2.0.3 -c pyg
 ```
+
+## Please cite our paper as follows!
+
+```bibtex
+
+@article{
+trang2024scalable,
+title={Scalable Hierarchical Self-Attention with Learnable Hierarchy for Long-Range Interactions},
+author={Thuan Nguyen Anh Trang and Khang Nhat Ngo and Hugo Sonnery and Thieu Vo and Siamak Ravanbakhsh and Truong Son Hy},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=qH4YFMyhce},
+note={}
+}
+```
