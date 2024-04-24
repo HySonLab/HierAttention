@@ -2,6 +2,8 @@
 
 Published at Transactions on Machine Learning Research (TMLR): https://openreview.net/pdf?id=qH4YFMyhce (forum: https://openreview.net/forum?id=qH4YFMyhce)
 
+![HierAtten](Hierarchical_Attention.png)
+
 ## Project directory structure
 The details of command to run the code are provided in sub-folders:
 ```text
